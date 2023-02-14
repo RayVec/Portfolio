@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkrayvec"]=self["webpackChunkrayvec"]||[]).push([[397],{397:function(e,n,u){u.r(n),u.d(n,{default:function(){return f}});var t=function(){var e=this,n=e._self._c;return n("div",[e._v("test")])},r=[],l={},c=l,s=u(1001),a=(0,s.Z)(c,t,r,!1,null,null,null),f=a.exports}}]);
+//# sourceMappingURL=397.3300213a.js.map
