@@ -17,10 +17,10 @@
             <transition name="el-zoom-in-top">
               <div class="submenu" v-show="submenu_show">
                 <div @click="openKeep" class="submenu-item">Keep Guard</div>
-                <div @click="openHeimdall" class="submenu-item">Heimdall</div>
                 <div @click="openFreetrial" class="submenu-item">
                   Meituan Free Trial
                 </div>
+                <div @click="openHeimdall" class="submenu-item">Heimdall</div>
               </div>
             </transition>
           </div>

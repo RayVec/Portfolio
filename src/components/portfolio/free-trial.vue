@@ -46,7 +46,7 @@
       <div class="heading3">Overview</div>
 
       <div class="text2" style="flex: 1">
-        Meituan free trial was a long-term activity since 2017, Meituan’s
+        Meituan free trial was a long-term compaign since 2017, Meituan’s
         partner merchants (mainly in life services) could register to join in
         this activity. The customers could browse trials they like and apply,
         and winning ones got the chance to experience services provided by
@@ -54,17 +54,27 @@
         first-step real data for their online shops.
       </div>
       <div class="heading3">Platforms</div>
-      <div class="text2">
-        <li>On the customer side - Meituan/Dianping App</li>
-        <img
-          style="width: 30%"
-          src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/customer-side.png"
-        />
-        <li>On the merchant side - Merchant Pass website</li>
-        <img
-          style="width: 100%"
-          src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/merchant-side.png"
-        />
+      <div class="text2 layout2">
+        <div style="width: 20%">
+          <img
+            style="width: 100%"
+            src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/customer-side.png"
+          />
+          <div style="color: gray; text-align: center">
+            On the customer side <br />
+            Meituan/Dianping App
+          </div>
+        </div>
+        <div style="width: 77%">
+          <img
+            style="width: 100%"
+            src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/merchant-side.png"
+          />
+          <div style="color: gray; text-align: center">
+            On the merchant side <br />
+            Merchant Pass website
+          </div>
+        </div>
       </div>
       <div class="heading3">User journey</div>
       <div class="text2">
@@ -77,7 +87,7 @@
       <div class="text2 layout1">
         <div style="width: 50%; text-align: center">
           <img
-            style="width: 80%"
+            class="value-customer-img"
             src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/curiosity.png"
           />
           <div class="text2">
@@ -86,7 +96,7 @@
         </div>
         <div style="width: 50%; text-align: center">
           <img
-            style="width: 80%"
+            class="value-customer-img"
             src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/free.png"
           />
           <div class="text2">0 cost</div>
@@ -95,14 +105,18 @@
       <div class="heading3">Values to Meituan</div>
       <div class="text2 layout1">
         <div style="width: 28%" class="value">
-          provide diverse services to promote Meituan's brand reputation
+          <i class="el-icon-trophy"></i>
+          Provide diverse services to promote Meituan's brand reputation
         </div>
         <div style="width: 28%" class="value">
-          have a chance to appeal to customers who are sensitive to cost and
+          <i class="el-icon-trophy"></i>
+
+          Have a chance to appeal to customers who are sensitive to cost and
           transfer them to old customers
         </div>
         <div style="width: 28%" class="value">
-          appeal new merchants who need platforms to promote their services,
+          <i class="el-icon-trophy"></i>
+          Appeal new merchants who need platforms to promote their services,
           Meituan can charge commissions and help promote the prosperity of the
           industry
         </div>
@@ -110,11 +124,13 @@
       <div class="heading3">Values to merchants</div>
       <div class="text2 layout1">
         <div style="width: 45%" class="value">
-          for merchant who are new to the market, launching free trial activity
-          is a form of advertisement to appeal new customers
+          <i class="el-icon-trophy"></i>
+          For merchants who are new to the market, launching free trial activity
+          is a feasible channel of advertisement to appeal new customers
         </div>
         <div style="width: 45%" class="value">
-          free trial can also help accumulate datapoints of their online shops
+          <i class="el-icon-trophy"></i>
+          Free trial can also help accumulate datapoints of their online shops
         </div>
       </div>
       <div class="heading2">Core Dilemma</div>
@@ -183,11 +199,21 @@
         can be concluded to the following indexes:
       </div>
       <div class="text2 layout1">
-        <div style="width: 28%" class="value">Participation customers</div>
         <div style="width: 28%" class="value">
+          <img
+            src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/goal.svg"
+          />Participation customers
+        </div>
+        <div style="width: 28%" class="value">
+          <img
+            src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/goal.svg"
+          />
           Arrival rate of winning customers
         </div>
         <div style="width: 28%" class="value">
+          <img
+            src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/goal.svg"
+          />
           Review rate of experienced customers
         </div>
       </div>
@@ -429,18 +455,45 @@
         </el-table>
       </div>
       <div class="heading3">
-        What are feasible ways to complement these deficiencies
+        What are deficiencies and feasible solutions of each phase
+      </div>
+      <div class="data-feedback title-bar">
+        <div class="feedback-index">
+          <div>Phase and target</div>
+        </div>
+        <div class="feedback-datas">
+          <div>Deficiencies</div>
+        </div>
+        <div class="feedback-datas">
+          <div>Solutions</div>
+        </div>
       </div>
       <div class="data-feedback">
         <div class="feedback-index">
           <div class="feedback-title">Merchant - Register</div>
+          <div class="feedback-subtitle">
+            Appeal more merchants to create more prosperous industry
+          </div>
+        </div>
+        <div class="feedback-datas">
+          <div class="feedback-data">
+            <!-- <div class="feedback-data-content">
+              Participation fee adjustment
+            </div> -->
+            <div class="feedback-data-title">Vague income of this compaign</div>
+          </div>
+          <div class="feedback-data">
+            <!-- <div class="feedback-data-content">Expectation information</div> -->
+            <div class="feedback-data-title">
+              Unreasonable participation fee
+            </div>
+          </div>
         </div>
         <div class="feedback-datas">
           <div class="feedback-data">
             <div class="feedback-data-content">
               Participation fee adjustment
             </div>
-
             <div class="feedback-data-title">
               Reasonable participation fee: need to communicate with market team
             </div>
@@ -464,6 +517,13 @@
         </div>
         <div class="feedback-datas">
           <div class="feedback-data">
+            <div class="feedback-data-title">
+              No system to adjust the winning amount, application amount
+            </div>
+          </div>
+        </div>
+        <div class="feedback-datas">
+          <div class="feedback-data">
             <div class="feedback-data-content">Amount adjustment</div>
             <div class="feedback-data-title">
               Enable merchants to adjust the winning amount and application
@@ -477,6 +537,20 @@
           <div class="feedback-title">Merchant - Notification management</div>
           <div class="feedback-subtitle">
             Give customers a sense of surprise and give enough guidance
+          </div>
+        </div>
+        <div class="feedback-datas">
+          <div class="feedback-data">
+            <div class="feedback-data-title">
+              Winning notification doesn’t cover all channels of Meituan,
+              especially about Merchants' own channel
+            </div>
+          </div>
+          <div class="feedback-data">
+            <div class="feedback-data-title">
+              No customization feature for merchants, they can't send some
+              specific guidances
+            </div>
           </div>
         </div>
         <div class="feedback-datas">
@@ -505,6 +579,24 @@
           <div class="feedback-title">Customer - Browse and apply</div>
           <div class="feedback-subtitle">
             Attract more customers especially high-quality customers to apply
+          </div>
+        </div>
+        <div class="feedback-datas">
+          <div class="feedback-data">
+            <div class="feedback-data-title">
+              No highlight of the lottery rate or the winning rate is too low,
+              many customers may feel not secure to win, the low winning rate
+              may let the activity seem to be a joke
+            </div>
+          </div>
+          <div class="feedback-data">
+            <div class="feedback-data-title">
+              No limitation or condition of participation, many participating
+              customers don’t even know the basic rules and information about
+              the provided item, and they will apply as many as possible to
+              increase their lottery rate, but in the end, they don’t even have
+              the condition to arrive at the shop
+            </div>
           </div>
         </div>
         <div class="feedback-datas">
@@ -564,8 +656,16 @@
         </div>
         <div class="feedback-datas">
           <div class="feedback-data">
+            <div class="feedback-data-title">
+              No notification, which may let customers feel they are not paid
+              attention by merchants, this is also an opportunity for merchant
+              to make advertisement
+            </div>
+          </div>
+        </div>
+        <div class="feedback-datas">
+          <div class="feedback-data">
             <div class="feedback-data-content">Notification customization</div>
-
             <div class="feedback-data-title">
               Allow merchants to send message to customers once to make
               advertisement and inform the lottery date (can be integrated to
@@ -579,6 +679,27 @@
           <div class="feedback-title">System - Generate winning list</div>
           <div class="feedback-subtitle">
             Select winning customers with best quality
+          </div>
+        </div>
+        <div class="feedback-datas">
+          <div class="feedback-data">
+            <div class="feedback-data-title">
+              No filter strategy, all customers’ winning chances are the same,
+              although it means equality but it not efficient in business
+            </div>
+          </div>
+          <div class="feedback-data">
+            <div class="feedback-data-title">
+              If someone cannot reserve the service, there is no strategy to
+              deal with such a situation
+            </div>
+          </div>
+          <div class="feedback-data">
+            <div class="feedback-data-title">
+              There is no strategy for merchants who want to change winning
+              numbers, which usually happen when merchants’ business environment
+              change
+            </div>
           </div>
         </div>
         <div class="feedback-datas">
@@ -603,7 +724,9 @@
           <div class="feedback-title">
             Customer - Reserve and arrive / give up
           </div>
-          <div class="feedback-subtitle"></div>
+          <div class="feedback-subtitle">
+            Select winning customers with best quality
+          </div>
         </div>
         <div class="feedback-datas">
           <div class="feedback-data">
@@ -1290,6 +1413,22 @@ export default {
 </script>
 
 <style scoped>
+.value >>> img {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+.value >>> i {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 30px;
+}
+.value-customer-img {
+  width: 50%;
+  border-radius: 100%;
+  border: 4px solid #e6a23c;
+}
 .priorities {
   display: flex;
   justify-content: space-between;
@@ -1358,11 +1497,15 @@ export default {
   font-size: 16px;
 }
 .feedback-data {
-  margin: 16px;
-  width: 90%;
+  /* margin: 16px; */
+  box-sizing: border-box;
+  width: 95%;
+  margin-bottom: 8px;
+  margin-top: 4px;
   padding: 8px;
   background-color: #e6a23c;
   color: #1f1f1f;
+  min-height: 100px;
 }
 .data-feedback {
   display: flex;
@@ -1372,11 +1515,16 @@ export default {
 .feedback-datas {
   flex: 1;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
   padding: 16px;
+  border-left: 1px solid #ecf0f1;
+
+  border-right: 1px solid #ecf0f1;
 }
 .feedback-index {
-  width: 25%;
+  width: 20%;
   display: flex;
   padding: 16px;
   flex-direction: column;
@@ -1784,6 +1932,7 @@ a:active {
   justify-content: flex-end;
 }
 .value {
+  position: relative;
   display: flex;
   padding: 16px;
   background-color: #1f1f1f;
@@ -1903,6 +2052,10 @@ a:active {
 }
 .goals {
   width: 30%;
+}
+.title-bar {
+  background-color: #626567;
+  color: white;
 }
 
 @media screen and (max-width: 768px) {
