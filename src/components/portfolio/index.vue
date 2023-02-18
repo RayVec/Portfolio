@@ -78,7 +78,8 @@
       </div>
     </div>
     <div v-if="menuClick === false" class="bottom">
-      Rui Wei © {{ this.getThisYear() }} All rights Reserved.
+      Designed and developed by Rui Wei © {{ this.getThisYear() }} All rights
+      Reserved.
     </div>
   </div>
 </template>

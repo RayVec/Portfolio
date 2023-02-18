@@ -665,7 +665,7 @@ a:active {
   padding-bottom: 5vh;
 }
 .work-features {
-  font-size: max(20px, 1.2vw);
+  font-size: max(18px, 1.2vw);
   color: #222;
   font-weight: 600;
 }
@@ -749,7 +749,7 @@ a:active {
 .work-view {
   position: relative;
   margin-top: 3vw;
-  font-size: max(20px, 1.2vw);
+  font-size: max(18px, 1.2vw);
   /* color: #626567; */
   color: black;
   width: fit-content;
@@ -810,14 +810,14 @@ a:active {
   background-color: #121212;
 }
 .work-intro {
-  font-size: max(20px, 1.2vw);
+  font-size: max(18px, 1.2vw);
   font-weight: 400;
   /* color: #626567; */
   color: #222;
 }
 .work-title {
   width: fit-content;
-  font-size: max(32px, 3.6vw);
+  font-size: max(32px, 3vw);
   margin-bottom: 1.5vw;
   font-weight: 600;
   color: #222;
@@ -1018,7 +1018,7 @@ a:active {
   color: #d90404;
 }
 .title {
-  font-size: max(32px, 2.8vw);
+  font-size: max(32px, 3vw);
   color: #222;
   font-weight: bold;
   font-weight: bolder;
