@@ -439,7 +439,7 @@
         <li>Arrival rate of winning customers</li>
         <li>Review rate of experiencing customers</li>
       </div>
-      <div class="heading3">
+      <!-- <div class="heading3">
         What are the core target and deficiency of each phase
       </div>
       <div class="text2">
@@ -453,11 +453,57 @@
           <el-table-column prop="deficiency" label="Deficiencies">
           </el-table-column>
         </el-table>
-      </div>
+      </div> -->
       <div class="heading3">
         What are deficiencies and feasible solutions of each phase
       </div>
-      <div class="data-feedback title-bar">
+      <el-collapse v-model="activeName" accordion>
+        <el-collapse-item
+          v-for="(data, i) in tableData"
+          :title="data.phase"
+          :name="i"
+          :key="i"
+        >
+          <div class="phase">
+            <div class="phase-value">
+              <div class="phase-value-title"></div>
+              <div class="phase-value-content">
+                {{ data.target }}
+              </div>
+            </div>
+            <div class="phase-bottom">
+              <div class="phase-deficiencies">
+                <div style="flex: 1">
+                  <div
+                    v-for="(deficiency, j) in data.deficiencies"
+                    :key="j"
+                    class="phase-deficiency"
+                  >
+                    {{ deficiency }}
+                  </div>
+                </div>
+              </div>
+              <div class="phase-solutions">
+                <div style="flex: 1">
+                  <div
+                    v-for="(solution, k) in data.solutions"
+                    :key="k"
+                    class="phase-solution"
+                  >
+                    <div class="phase-solution-title">
+                      {{ solution.title }}
+                    </div>
+                    <div class="phase-solution-content">
+                      {{ solution.content }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </el-collapse-item>
+      </el-collapse>
+      <div v-if="false" class="data-feedback title-bar">
         <div class="feedback-index">
           <div>Phase and target</div>
         </div>
@@ -468,387 +514,401 @@
           <div>Solutions</div>
         </div>
       </div>
-      <div class="data-feedback">
-        <div class="feedback-index">
-          <div class="feedback-title">Merchant - Register</div>
-          <div class="feedback-subtitle">
-            Appeal more merchants to create more prosperous industry
+
+      <template v-if="false">
+        <div class="data-feedback">
+          <div class="feedback-index">
+            <div class="feedback-title">Merchant - Register</div>
+            <div class="feedback-subtitle">
+              Appeal more merchants to create more prosperous industry
+            </div>
           </div>
-        </div>
-        <div class="feedback-datas">
-          <div class="feedback-data">
-            <!-- <div class="feedback-data-content">
+          <div class="feedback-datas">
+            <div class="feedback-data">
+              <!-- <div class="feedback-data-content">
               Participation fee adjustment
             </div> -->
-            <div class="feedback-data-title">Vague income of this compaign</div>
-          </div>
-          <div class="feedback-data">
-            <!-- <div class="feedback-data-content">Expectation information</div> -->
-            <div class="feedback-data-title">
-              Unreasonable participation fee
+              <div class="feedback-data-title">
+                Vague income of this compaign
+              </div>
+            </div>
+            <div class="feedback-data">
+              <!-- <div class="feedback-data-content">Expectation information</div> -->
+              <div class="feedback-data-title">
+                Unreasonable participation fee
+              </div>
             </div>
           </div>
-        </div>
-        <div class="feedback-datas">
-          <div class="feedback-data">
-            <div class="feedback-data-content">
-              Participation fee adjustment
+          <div class="feedback-datas">
+            <div class="feedback-data">
+              <div class="feedback-data-content">
+                Participation fee adjustment
+              </div>
+              <div class="feedback-data-title">
+                Reasonable participation fee: need to communicate with market
+                team
+              </div>
             </div>
-            <div class="feedback-data-title">
-              Reasonable participation fee: need to communicate with market team
-            </div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-content">Expectation information</div>
+            <div class="feedback-data">
+              <div class="feedback-data-content">Expectation information</div>
 
-            <div class="feedback-data-title">
-              Provide expected upcoming new customers, and present possible
-              reachable customers/income to merchants
+              <div class="feedback-data-title">
+                Provide expected upcoming new customers, and present possible
+                reachable customers/income to merchants
+              </div>
             </div>
           </div>
         </div>
+        <div class="data-feedback">
+          <div class="feedback-index">
+            <div class="feedback-title">Merchant - Trial management</div>
+            <div class="feedback-subtitle">
+              Help merchant publish activities more precisely and efficiently
+            </div>
+          </div>
+          <div class="feedback-datas">
+            <div class="feedback-data">
+              <div class="feedback-data-title">
+                No system to adjust the winning amount, application amount
+              </div>
+            </div>
+          </div>
+          <div class="feedback-datas">
+            <div class="feedback-data">
+              <div class="feedback-data-content">Amount adjustment</div>
+              <div class="feedback-data-title">
+                Enable merchants to adjust the winning amount and application
+                amount flexibly after publishing the trial
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="data-feedback">
+          <div class="feedback-index">
+            <div class="feedback-title">Merchant - Notification management</div>
+            <div class="feedback-subtitle">
+              Give customers a sense of surprise and give enough guidance
+            </div>
+          </div>
+          <div class="feedback-datas">
+            <div class="feedback-data">
+              <div class="feedback-data-title">
+                Winning notification doesn’t cover all channels of Meituan,
+                especially about Merchants' own channel
+              </div>
+            </div>
+            <div class="feedback-data">
+              <div class="feedback-data-title">
+                No customization feature for merchants, they can't send some
+                specific guidances
+              </div>
+            </div>
+          </div>
+          <div class="feedback-datas">
+            <div class="feedback-data">
+              <div class="feedback-data-content">
+                Notification customization
+              </div>
+
+              <div class="feedback-data-title">
+                Enable merchant to customize their own notification during
+                different phases
+              </div>
+            </div>
+            <div class="feedback-data">
+              <div class="feedback-data-content">
+                Notification channel coverage
+              </div>
+
+              <div class="feedback-data-title">
+                Notification covers merchants' own channel, help merchants
+                accumulate their own subscriptions
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="data-feedback">
+          <div class="feedback-index">
+            <div class="feedback-title">Customer - Browse and apply</div>
+            <div class="feedback-subtitle">
+              Attract more customers especially high-quality customers to apply
+            </div>
+          </div>
+          <div class="feedback-datas">
+            <div class="feedback-data">
+              <div class="feedback-data-title">
+                No highlight of the lottery rate or the winning rate is too low,
+                many customers may feel not secure to win, the low winning rate
+                may let the activity seem to be a joke
+              </div>
+            </div>
+            <div class="feedback-data">
+              <div class="feedback-data-title">
+                No limitation or condition of participation, many participating
+                customers don’t even know the basic rules and information about
+                the provided item, and they will apply as many as possible to
+                increase their lottery rate, but in the end, they don’t even
+                have the condition to arrive at the shop
+              </div>
+            </div>
+          </div>
+          <div class="feedback-datas">
+            <div class="feedback-data">
+              <div class="feedback-data-content">Highlight winning amount</div>
+              <div class="feedback-data-title">
+                Highlight the amount of winning customers to give a sense of
+                more winning opportunities
+              </div>
+            </div>
+            <div class="feedback-data">
+              <div class="feedback-data-content">Limit applicant amount</div>
+              <div class="feedback-data-title">
+                Give merchants the ability to limite amount of applicants
+              </div>
+            </div>
+            <div class="feedback-data">
+              <div class="feedback-data-content">Limit application times</div>
+
+              <div class="feedback-data-title">
+                Limit application times per day to let customers select the most
+                suitable trials
+              </div>
+            </div>
+            <div class="feedback-data">
+              <div class="feedback-data-content">Inform the whole process</div>
+              <div class="feedback-data-title">
+                Inform customers of the whole participation process when first
+                apply
+              </div>
+            </div>
+            <div class="feedback-data">
+              <div class="feedback-data-content">
+                Review experience limitation
+              </div>
+
+              <div class="feedback-data-title">
+                Add limitation that all the applicants must have experiences of
+                writing reviews
+              </div>
+            </div>
+            <div class="feedback-data">
+              <div class="feedback-data-content">
+                Add reviews to browsing page
+              </div>
+              <div class="feedback-data-title">
+                Add customer reviews to browse page, this can improve the trust
+                of customers and lead them to be accustomed to review
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="data-feedback">
+          <div class="feedback-index">
+            <div class="feedback-title">Customer - Wait / give</div>
+            <div class="feedback-subtitle">Keep in touch with customers</div>
+          </div>
+          <div class="feedback-datas">
+            <div class="feedback-data">
+              <div class="feedback-data-title">
+                No notification, which may let customers feel they are not paid
+                attention by merchants, this is also an opportunity for merchant
+                to make advertisement
+              </div>
+            </div>
+          </div>
+          <div class="feedback-datas">
+            <div class="feedback-data">
+              <div class="feedback-data-content">
+                Notification customization
+              </div>
+              <div class="feedback-data-title">
+                Allow merchants to send message to customers once to make
+                advertisement and inform the lottery date (can be integrated to
+                the merchant notification customization feature)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="data-feedback">
+          <div class="feedback-index">
+            <div class="feedback-title">System - Generate winning list</div>
+            <div class="feedback-subtitle">
+              Select winning customers with best quality
+            </div>
+          </div>
+          <div class="feedback-datas">
+            <div class="feedback-data">
+              <div class="feedback-data-title">
+                No filter strategy, all customers’ winning chances are the same,
+                although it means equality but it not efficient in business
+              </div>
+            </div>
+            <div class="feedback-data">
+              <div class="feedback-data-title">
+                If someone cannot reserve the service, there is no strategy to
+                deal with such a situation
+              </div>
+            </div>
+            <div class="feedback-data">
+              <div class="feedback-data-title">
+                There is no strategy for merchants who want to change winning
+                numbers, which usually happen when merchants’ business
+                environment change
+              </div>
+            </div>
+          </div>
+          <div class="feedback-datas">
+            <div class="feedback-data">
+              <div class="feedback-data-content">Rating system</div>
+              <div class="feedback-data-title">
+                Change lottery strategy to rate the applicants according our
+                customer’s database
+              </div>
+            </div>
+            <div class="feedback-data">
+              <div class="feedback-data-content">Waitlist system</div>
+              <div class="feedback-data-title">
+                Add a system to complement winning list when the winning
+                applicant gives up
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="data-feedback">
+          <div class="feedback-index">
+            <div class="feedback-title">
+              Customer - Reserve and arrive / give up
+            </div>
+            <div class="feedback-subtitle">
+              Select winning customers with best quality
+            </div>
+          </div>
+          <div class="feedback-datas">
+            <div class="feedback-data">
+              <div class="feedback-data-content">Arrival date adjustment</div>
+
+              <div class="feedback-data-title">
+                Allow customer to change there arrival date after confirming it
+              </div>
+            </div>
+            <div class="feedback-data">
+              <div class="feedback-data-content">
+                Punishment for no reservation
+              </div>
+              <div class="feedback-data-title">
+                Forbid customer to participate in similar activities for a while
+                if they give up reservation(break the rules)
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="data-feedback">
+          <div class="feedback-index">
+            <div class="feedback-title">Merchant - provide service</div>
+            <div class="feedback-subtitle">
+              Manage customers’ status and let them feel everything is in
+              arrangement
+            </div>
+          </div>
+          <div class="feedback-datas">
+            <div class="feedback-data">
+              <div class="feedback-data-content">Reservation management</div>
+
+              <div class="feedback-data-title">
+                Give merchants ability to manage reservation, including scan
+                customers’ QR code to complete check-in progress, and merchants
+                do not have the authority to change customers’ status
+              </div>
+            </div>
+            <div class="feedback-data">
+              <div class="feedback-data-content">Report portal</div>
+              <div class="feedback-data-title">
+                Add report portal in customers’ application page after they
+                complete the service, the report will be passed to Meituan’s
+                customer service center and can be counted by our activity
+                management team
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="data-feedback">
+          <div class="feedback-index">
+            <div class="feedback-title">Customer - Review</div>
+            <div class="feedback-subtitle">Stimulate customers to review</div>
+          </div>
+          <div class="feedback-datas">
+            <div class="feedback-data">
+              <div class="feedback-data-content">Punishment for no review</div>
+
+              <div class="feedback-data-title">
+                Punishment of no review: forbid customers who don’t review to
+                participate in similar activities for a while
+              </div>
+            </div>
+            <div class="feedback-data">
+              <div class="feedback-data-content">Review credit</div>
+              <div class="feedback-data-title">
+                Reward customer with Meituan credits after they complete the
+                review
+              </div>
+            </div>
+            <div class="feedback-data">
+              <div class="feedback-data-content">
+                Notification customization
+              </div>
+
+              <div class="feedback-data-title">
+                Give merchants one chance to send customized notification to
+                customers when they complete the experience but don’t review
+                after a few days (can be integrated to notification
+                customization feature)
+              </div>
+            </div>
+            <div class="feedback-data">
+              <div class="feedback-data-content">
+                Add reviews to browsing page
+              </div>
+
+              <div class="feedback-data-title">
+                Add customers’ reviews to the browse page of free trial, build
+                an active environment and improve the trust of customers to our
+                trials
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="data-feedback">
+          <div class="feedback-index">
+            <div class="feedback-title">Merchant - Data statistics</div>
+            <div class="feedback-subtitle">
+              Help merchants maintain these customers to make larger business
+            </div>
+          </div>
+          <div class="feedback-datas">
+            <div class="feedback-data">
+              <div class="feedback-data-content">Review filter</div>
+              <div class="feedback-data-title">
+                Add a filter option of free trial to customer’s review page,
+                which can help them filter out reviews from free trial(Belong to
+                Merchant Pass platform team)
+              </div>
+            </div>
+            <div class="feedback-data">
+              <div class="feedback-data-content">
+                Modify user rules of free trial
+              </div>
+              <div class="feedback-data-title">
+                Add explanation about users' privacy, highlighting the hidden
+                phone number or other private information in our marchant system
+              </div>
+            </div>
+          </div>
+        </div>
+      </template>
+
+      <div class="heading3">
+        What is the priority of these solutions/features
       </div>
-      <div class="data-feedback">
-        <div class="feedback-index">
-          <div class="feedback-title">Merchant - Trial management</div>
-          <div class="feedback-subtitle">
-            Help merchant publish activities more precisely and efficiently
-          </div>
-        </div>
-        <div class="feedback-datas">
-          <div class="feedback-data">
-            <div class="feedback-data-title">
-              No system to adjust the winning amount, application amount
-            </div>
-          </div>
-        </div>
-        <div class="feedback-datas">
-          <div class="feedback-data">
-            <div class="feedback-data-content">Amount adjustment</div>
-            <div class="feedback-data-title">
-              Enable merchants to adjust the winning amount and application
-              amount flexibly after publishing the trial
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="data-feedback">
-        <div class="feedback-index">
-          <div class="feedback-title">Merchant - Notification management</div>
-          <div class="feedback-subtitle">
-            Give customers a sense of surprise and give enough guidance
-          </div>
-        </div>
-        <div class="feedback-datas">
-          <div class="feedback-data">
-            <div class="feedback-data-title">
-              Winning notification doesn’t cover all channels of Meituan,
-              especially about Merchants' own channel
-            </div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-title">
-              No customization feature for merchants, they can't send some
-              specific guidances
-            </div>
-          </div>
-        </div>
-        <div class="feedback-datas">
-          <div class="feedback-data">
-            <div class="feedback-data-content">Notification customization</div>
-
-            <div class="feedback-data-title">
-              Enable merchant to customize their own notification during
-              different phases
-            </div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-content">
-              Notification channel coverage
-            </div>
-
-            <div class="feedback-data-title">
-              Notification covers merchants' own channel, help merchants
-              accumulate their own subscriptions
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="data-feedback">
-        <div class="feedback-index">
-          <div class="feedback-title">Customer - Browse and apply</div>
-          <div class="feedback-subtitle">
-            Attract more customers especially high-quality customers to apply
-          </div>
-        </div>
-        <div class="feedback-datas">
-          <div class="feedback-data">
-            <div class="feedback-data-title">
-              No highlight of the lottery rate or the winning rate is too low,
-              many customers may feel not secure to win, the low winning rate
-              may let the activity seem to be a joke
-            </div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-title">
-              No limitation or condition of participation, many participating
-              customers don’t even know the basic rules and information about
-              the provided item, and they will apply as many as possible to
-              increase their lottery rate, but in the end, they don’t even have
-              the condition to arrive at the shop
-            </div>
-          </div>
-        </div>
-        <div class="feedback-datas">
-          <div class="feedback-data">
-            <div class="feedback-data-content">Highlight winning amount</div>
-            <div class="feedback-data-title">
-              Highlight the amount of winning customers to give a sense of more
-              winning opportunities
-            </div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-content">Limit applicant amount</div>
-            <div class="feedback-data-title">
-              Give merchants the ability to limite amount of applicants
-            </div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-content">Limit application times</div>
-
-            <div class="feedback-data-title">
-              Limit application times per day to let customers select the most
-              suitable trials
-            </div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-content">Inform the whole process</div>
-            <div class="feedback-data-title">
-              Inform customers of the whole participation process when first
-              apply
-            </div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-content">
-              Review experience limitation
-            </div>
-
-            <div class="feedback-data-title">
-              Add limitation that all the applicants must have experiences of
-              writing reviews
-            </div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-content">
-              Add reviews to browsing page
-            </div>
-            <div class="feedback-data-title">
-              Add customer reviews to browse page, this can improve the trust of
-              customers and lead them to be accustomed to review
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="data-feedback">
-        <div class="feedback-index">
-          <div class="feedback-title">Customer - Wait / give</div>
-          <div class="feedback-subtitle">Keep in touch with customers</div>
-        </div>
-        <div class="feedback-datas">
-          <div class="feedback-data">
-            <div class="feedback-data-title">
-              No notification, which may let customers feel they are not paid
-              attention by merchants, this is also an opportunity for merchant
-              to make advertisement
-            </div>
-          </div>
-        </div>
-        <div class="feedback-datas">
-          <div class="feedback-data">
-            <div class="feedback-data-content">Notification customization</div>
-            <div class="feedback-data-title">
-              Allow merchants to send message to customers once to make
-              advertisement and inform the lottery date (can be integrated to
-              the merchant notification customization feature)
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="data-feedback">
-        <div class="feedback-index">
-          <div class="feedback-title">System - Generate winning list</div>
-          <div class="feedback-subtitle">
-            Select winning customers with best quality
-          </div>
-        </div>
-        <div class="feedback-datas">
-          <div class="feedback-data">
-            <div class="feedback-data-title">
-              No filter strategy, all customers’ winning chances are the same,
-              although it means equality but it not efficient in business
-            </div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-title">
-              If someone cannot reserve the service, there is no strategy to
-              deal with such a situation
-            </div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-title">
-              There is no strategy for merchants who want to change winning
-              numbers, which usually happen when merchants’ business environment
-              change
-            </div>
-          </div>
-        </div>
-        <div class="feedback-datas">
-          <div class="feedback-data">
-            <div class="feedback-data-content">Rating system</div>
-            <div class="feedback-data-title">
-              Change lottery strategy to rate the applicants according our
-              customer’s database
-            </div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-content">Waitlist system</div>
-            <div class="feedback-data-title">
-              Add a system to complement winning list when the winning applicant
-              gives up
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="data-feedback">
-        <div class="feedback-index">
-          <div class="feedback-title">
-            Customer - Reserve and arrive / give up
-          </div>
-          <div class="feedback-subtitle">
-            Select winning customers with best quality
-          </div>
-        </div>
-        <div class="feedback-datas">
-          <div class="feedback-data">
-            <div class="feedback-data-content">Arrival date adjustment</div>
-
-            <div class="feedback-data-title">
-              Allow customer to change there arrival date after confirming it
-            </div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-content">
-              Punishment for no reservation
-            </div>
-            <div class="feedback-data-title">
-              Forbid customer to participate in similar activities for a while
-              if they give up reservation(break the rules)
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="data-feedback">
-        <div class="feedback-index">
-          <div class="feedback-title">Merchant - provide service</div>
-          <div class="feedback-subtitle">
-            Manage customers’ status and let them feel everything is in
-            arrangement
-          </div>
-        </div>
-        <div class="feedback-datas">
-          <div class="feedback-data">
-            <div class="feedback-data-content">Reservation management</div>
-
-            <div class="feedback-data-title">
-              Give merchants ability to manage reservation, including scan
-              customers’ QR code to complete check-in progress, and merchants do
-              not have the authority to change customers’ status
-            </div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-content">Report portal</div>
-            <div class="feedback-data-title">
-              Add report portal in customers’ application page after they
-              complete the service, the report will be passed to Meituan’s
-              customer service center and can be counted by our activity
-              management team
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="data-feedback">
-        <div class="feedback-index">
-          <div class="feedback-title">Customer - Review</div>
-          <div class="feedback-subtitle">Stimulate customers to review</div>
-        </div>
-        <div class="feedback-datas">
-          <div class="feedback-data">
-            <div class="feedback-data-content">Punishment for no review</div>
-
-            <div class="feedback-data-title">
-              Punishment of no review: forbid customers who don’t review to
-              participate in similar activities for a while
-            </div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-content">Review credit</div>
-            <div class="feedback-data-title">
-              Reward customer with Meituan credits after they complete the
-              review
-            </div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-content">Notification customization</div>
-
-            <div class="feedback-data-title">
-              Give merchants one chance to send customized notification to
-              customers when they complete the experience but don’t review after
-              a few days (can be integrated to notification customization
-              feature)
-            </div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-content">
-              Add reviews to browsing page
-            </div>
-
-            <div class="feedback-data-title">
-              Add customers’ reviews to the browse page of free trial, build an
-              active environment and improve the trust of customers to our
-              trials
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="data-feedback">
-        <div class="feedback-index">
-          <div class="feedback-title">Merchant - Data statistics</div>
-          <div class="feedback-subtitle">
-            Help merchants maintain these customers to make larger business
-          </div>
-        </div>
-        <div class="feedback-datas">
-          <div class="feedback-data">
-            <div class="feedback-data-content">Review filter</div>
-            <div class="feedback-data-title">
-              Add a filter option of free trial to customer’s review page, which
-              can help them filter out reviews from free trial(Belong to
-              Merchant Pass platform team)
-            </div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-content">
-              Modify user rules of free trial
-            </div>
-            <div class="feedback-data-title">
-              Add explanation about users' privacy, highlighting the hidden
-              phone number or other private information in our marchant system
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="heading3">What is the priority of these ways/features</div>
       <div class="text2">
         <div class="priorities">
           <div class="priority">
@@ -1215,74 +1275,226 @@ export default {
         {
           phase: "Merchant - Register",
           target: "Appeal more merchants to create more prosperous industry",
-          deficiency:
-            "1. Unreasonable participation fee \n2. Vague income of this activity",
+          deficiencies: [
+            "Unreasonable participation fee",
+            "Vague income of this activity",
+          ],
+          solutions: [
+            {
+              title: "Participation fee adjustment",
+              content:
+                "Reasonable participation fee: need to communicate with market team",
+            },
+            {
+              title: "Expectation information",
+              content:
+                "Provide expected upcoming new customers, and present possible reachable customers/income to merchants",
+            },
+          ],
         },
         {
           phase: "Merchant - Trial management",
           target:
             "Help merchant publish activities more precisely, flexibly and efficiently",
-          deficiency:
-            "1. No system to adjust the winning amount, application amount",
+          deficiencies: [
+            "No system to adjust the winning amount, application amount",
+          ],
+          solutions: [
+            {
+              title: "Amount adjustment",
+              content:
+                "Enable merchants to adjust the winning amount and application amount flexibly after publishing the trial",
+            },
+          ],
         },
         {
           phase: "Merchant - Notification management",
           target: "Give cutomers a sense of surprise and give enough guidance",
-          deficiency:
-            "1. Winning notification doesn’t cover all channels of Meituan, especially about Merchants' own channel \n 2. No customization feature for merchants, they can't send some specific guidances",
+          deficiencies: [
+            "Winning notification doesn’t cover all channels of Meituan, especially about Merchants' own channel",
+            "No customization feature for merchants, they can't send some specific guidances",
+          ],
+          solutions: [
+            {
+              title: "Notification customization",
+              content:
+                "Enable merchant to customize their own notification during different phases",
+            },
+          ],
         },
         {
           phase: "Customer - Browse and apply",
           target:
             "Attract more customers especially high-quality customers to apply",
-          deficiency:
-            "1. No highlight of the lottery rate or the winning rate is too low, many customers may feel not secure to win, the low winning rate may let the activity seem to be a joke \n 2. No limitation or condition of participation, many participating customers don’t even know the basic rules and information about the provided item, and they will apply as many as possible to increase their lottery rate, but in the end, they don’t even have the condition to arrive at the shop",
+          deficiencies: [
+            "No highlight of the lottery rate or the winning rate is too low, many customers may feel not secure to win, the low winning rate may let the activity seem to be a joke",
+            "No limitation or condition of participation, many participating customers don’t even know the basic rules and information about the provided item, and they will apply as many as possible to increase their lottery rate, but in the end, they don’t even have the condition to arrive at the shop",
+          ],
+          solutions: [
+            {
+              title: "Highlight winning amount",
+              content:
+                "Highlight the amount of winning customers to give a sense of more winning opportunities",
+            },
+            {
+              title: "Limit applicant amount",
+              content:
+                "Give merchants the ability to limite amount of applicants",
+            },
+            {
+              title: "Limit application times",
+              content:
+                "Limit application times per day to let customers select the most suitable trials",
+            },
+            {
+              title: "Inform the whole process",
+              content:
+                "Inform customers of the whole participation process when first apply",
+            },
+            {
+              title: "Review experience limitation",
+              content:
+                "Add limitation that all the applicants must have experiences of writing reviews",
+            },
+            {
+              title: "Add reviews to browsing page",
+              content:
+                "Add customer reviews to browse page, this can improve the trust of customers and lead them to be accustomed to review",
+            },
+          ],
         },
         {
           phase: "Customer - Wait / give",
           target:
             "Keep in touch with customers to reduce customers’ giving up ",
-          deficiency:
-            "1. No notification, which may let customers feel they are not paid attention by merchants, this is also an opportunity for merchant to make advertisement",
+          deficiencies: [
+            " No notification, which may let customers feel they are not paid attention by merchants, this is also an opportunity for merchant to make advertisement",
+          ],
+          solutions: [
+            {
+              title: "Notification customization",
+              content:
+                "Allow merchants to send message to customers once to make advertisement and inform the lottery date (can be integrated to the merchant notification customization feature)",
+            },
+          ],
         },
         {
           phase: "System - Generate winning list",
           target: "Keep customers’ patience and curiosity of this activity",
-          deficiency:
-            "1. No filter strategy, all customers’ winning chances are the same, although it means equality but it not efficient in business \n 2. If someone cannot reserve the service, there is no strategy to deal with such a situation \n 3. There is no strategy for merchants who want to change winning numbers, which usually happen when merchants’ business environment change",
+          deficiencies: [
+            "No filter strategy, all customers’ winning chances are the same, although it means equality but it not efficient in business",
+            "If someone cannot reserve the service, there is no strategy to deal with such a situation",
+            "There is no strategy for merchants who want to change winning numbers, which usually happen when merchants’ business environment change",
+          ],
+          solutions: [
+            {
+              title: "Rating system",
+              content:
+                "Change lottery strategy to rate the applicants according our customer’s database",
+            },
+            {
+              title: "Waitlist system",
+              content:
+                "Add a system to complement winning list when the winning applicant gives up",
+            },
+          ],
         },
         {
           phase: "Customer - Reserve and arrive / give up",
           target: "Select winning customers with best quality",
-          deficiency:
-            "1. If a customer wants to change the arrival date, there will be no way, thus causing customers loss \n 2. No punishment for giving up a reservation",
+          deficiencies: [
+            "If a customer wants to change the arrival date, there will be no way, thus causing customers loss",
+            "No punishment for giving up a reservation",
+          ],
+          solutions: [
+            {
+              title: "Notification customization",
+              content:
+                "Allow merchants to send message to customers once to make advertisement and inform the lottery date (can be integrated to the merchant notification customization feature)",
+            },
+          ],
         },
         {
           phase: "Merchant - Provide service",
           target:
             "Manage customers’ status and let them feel everything is in arrangement",
-          deficiency:
-            "1. If customers find this activity a terrible experience, there is no channel for them to report the merchant, this will cause the distrust of customers \n 2. No feedback during the experience, customers feel a sense of no control because there is no step related to Meituan’s platform \n 3. Merchants may make mistakes when they count customers’ check-ins",
+          deficiencies: [
+            "If customers find this activity a terrible experience, there is no channel for them to report the merchant, this will cause the distrust of customers",
+            "No feedback during the experience, customers feel a sense of no control because there is no step related to Meituan’s platform",
+            "Merchants may make mistakes when they count customers’ check-ins",
+          ],
+          solutions: [
+            {
+              title: "Reservation management",
+              content:
+                "Give merchants ability to manage reservation, including scan customers’ QR code to complete check-in progress, and merchants do not have the authority to change customers’ status",
+            },
+            {
+              title: "Report portal",
+              content:
+                "Add report portal in customers’ application page after they complete the service, the report will be passed to Meituan’s customer service center and can be counted by our activity management team",
+            },
+          ],
         },
-        {
-          phase: "Merchant - Waitlist management",
-          target:
-            "Help merchants get enough real winning applicants that are qualified",
-          deficiency: "1. No system, all procedures are handmade",
-        },
+        // {
+        //   phase: "Merchant - Waitlist management",
+        //   target:
+        //     "Help merchants get enough real winning applicants that are qualified",
+        //   deficiencies: ["No system, all procedures are handmade"],
+        // },
         {
           phase: "Customer - Review",
           target:
             "1. No punishment if customers don’t review \n 2. No motivation of review \n 3. Merchant is not in participation of this phase",
-          deficiency:
-            "1. If customers find this activity a terrible experience, there is no channel for them to report the merchant, this will cause the distrust of customers \n 2. No feedback during the experience, customers feel a sense of no control because there is no step related to Meituan’s platform \n 3. Merchants may make mistakes when they count customers’ check-ins",
+          deficiencies: [
+            "If customers find this activity a terrible experience, there is no channel for them to report the merchant, this will cause the distrust of customers",
+            "No feedback during the experience, customers feel a sense of no control because there is no step related to Meituan’s platform",
+            "Merchants may make mistakes when they count customers’ check-ins",
+          ],
+          solutions: [
+            {
+              title: "Punishment for no review",
+              content:
+                "Punishment of no review: forbid customers who don’t review to participate in similar activities for a while",
+            },
+            {
+              title: "Review credit",
+              content:
+                "Reward customer with Meituan credits after they complete the review",
+            },
+            {
+              title: "Notification customization",
+              content:
+                "Give merchants one chance to send customized notification to customers when they complete the experience but don’t review after a few days (can be integrated to notification customization feature)",
+            },
+            {
+              title: "Add reviews to browsing page",
+              content:
+                "Add customers’ reviews to the browse page of free trial, build an active environment and improve the trust of customers to our trials",
+            },
+          ],
         },
         {
           phase: "Merchant - Data statistics",
           target:
             "Help merchants maintain these customers to make larger business",
-          deficiency:
-            "1. No protection of customers’ privacy \n 2. No agreement of the customer, may cause low risk \n 3. No chance to transfer new customers to old customers",
+          deficiencies: [
+            "No protection of customers’ privacy",
+            "No agreement of the customer, may cause low risk",
+            "No chance to transfer new customers to old customers",
+          ],
+          solutions: [
+            {
+              title: "Review filter",
+              content:
+                "Add a filter option of free trial to customer’s review page, which can help them filter out reviews from free trial(Belong to Merchant Pass platform team)",
+            },
+            {
+              title: "Modify user rules of free trial",
+              content:
+                "Add explanation about users' privacy, highlighting the hidden phone number or other private information in our marchant system",
+            },
+          ],
         },
       ],
     };
@@ -1413,6 +1625,88 @@ export default {
 </script>
 
 <style scoped>
+/* phase */
+.phase-solutions::before {
+  content: "Solutions:";
+  display: inline-block;
+
+  font-weight: bold;
+  margin-right: 8px;
+  width: 110px;
+}
+.phase-solution {
+  padding: 8px;
+  background-color: #ebeef5;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.phase-solution-title {
+  font-weight: bold;
+}
+.phase-solutions {
+  display: flex;
+}
+.phase-deficiencies {
+  display: flex;
+  margin-bottom: 16px;
+  margin-top: 16px;
+}
+.phase-deficiencies::before {
+  content: "Deficiencies:";
+  display: inline-block;
+
+  font-weight: bold;
+  margin-right: 8px;
+  width: 110px;
+}
+.phase-deficiency {
+  padding: 8px;
+  background-color: #ebeef5;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.phase-value {
+  display: flex;
+}
+.phase-value-title::before {
+  display: inline-block;
+
+  content: "Value:";
+  font-weight: bold;
+  margin-right: 8px;
+}
+.phase-value-title {
+  width: 110px;
+  margin-right: 8px;
+}
+.block >>> .el-collapse-item__content {
+  font-size: 16px;
+}
+.block >>> .el-collapse {
+  border-bottom: unset;
+  border-top: unset;
+  margin-bottom: 32px;
+}
+.brainstorm-point {
+  border-bottom: 1px solid #ebeef5;
+  line-height: 24px;
+  font-size: 16px;
+  padding: 12px 0;
+}
+.block >>> .el-collapse-item__header {
+  /* border-top: 1px solid #ebeef5; */
+  /* border-bottom: unset; */
+  font-size: 16px;
+  line-height: 24px;
+  padding: 12px 0;
+  height: unset;
+}
+.block >>> .el-tabs__item {
+  font-size: 16px;
+}
+.block >>> .el-tabs__content {
+  padding: 0;
+}
 .value >>> img {
   width: 30px;
   height: 30px;
