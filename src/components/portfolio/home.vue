@@ -559,7 +559,7 @@ export default {
                   transformOrigin: "left",
                 },
               ],
-              500
+              400
             );
           }
         }

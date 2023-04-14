@@ -1012,10 +1012,9 @@
       </div>
       <div class="text2">
         <iframe
-          style="border: 1px solid rgba(0, 0, 0, 0.1)"
+          style="border: 1px solid rgba(0, 0, 0, 0.1); aspect-ratio: 16/9"
           width="100%"
-          height="600"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FmJ9rKze9t63HxLmUNYEv6T%2FMeituan%3Fnode-id%3D1%253A2%26t%3D6tOPtqKYWpV8PlSN-1"
+          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FndOhLLoAYQVkPjN2N19JMT%2Fportfolio%3Fnode-id%3D402%253A3089%26t%3DD4JoMQjkSXnJrKPD-1"
           allowfullscreen
         ></iframe>
       </div>
