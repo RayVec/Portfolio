@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <navigation />
+    <!-- <navigation /> -->
     <div class="block">
       <div class="cover">
         <img
@@ -37,409 +37,415 @@
         </div>
       </div>
     </div>
-    <div class="block">
-      <div class="top-bar work-length">
-        <div class="title">Background</div>
-        <div class="bar-divide"></div>
-      </div>
-      <div class="heading2">About Meituan free trial</div>
-      <div class="heading3">Overview</div>
+    <div class="body-content">
+      <navigation />
+      <div class="body-right">
+        <div class="block">
+          <div class="top-bar work-length">
+            <div class="title">Background</div>
+            <div class="bar-divide"></div>
+          </div>
+          <div class="heading2">About Meituan free trial</div>
+          <div class="heading3">Overview</div>
 
-      <div class="text2" style="flex: 1">
-        Meituan free trial was a long-term compaign since 2017, Meituan’s
-        partner merchants (mainly in life services) could register to join in
-        this activity. The customers could browse trials they like and apply,
-        and winning ones got the chance to experience services provided by
-        merchants, in the end, they should review to help merchants accumulate
-        first-step real data for their online shops.
-      </div>
-      <div class="heading3">Platforms</div>
-      <div class="text2 layout2">
-        <div style="width: 20%">
-          <img
-            style="width: 100%"
-            src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/customer-side.png"
-          />
-          <div style="color: gray; text-align: center">
-            On the customer side <br />
-            Meituan/Dianping App
+          <div class="text2" style="flex: 1">
+            Meituan free trial was a long-term compaign since 2017, Meituan’s
+            partner merchants (mainly in life services) could register to join
+            in this activity. The customers could browse trials they like and
+            apply, and winning ones got the chance to experience services
+            provided by merchants, in the end, they should review to help
+            merchants accumulate first-step real data for their online shops.
           </div>
-        </div>
-        <div style="width: 77%">
-          <img
-            style="width: 100%"
-            src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/merchant-side.png"
-          />
-          <div style="color: gray; text-align: center">
-            On the merchant side <br />
-            Merchant Pass website
+          <div class="heading3">Platforms</div>
+          <div class="text2 layout2">
+            <div style="width: 20%">
+              <img
+                style="width: 100%"
+                src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/customer-side.png"
+              />
+              <div style="color: gray; text-align: center">
+                On the customer side <br />
+                Meituan/Dianping App
+              </div>
+            </div>
+            <div style="width: 77%">
+              <img
+                style="width: 100%"
+                src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/merchant-side.png"
+              />
+              <div style="color: gray; text-align: center">
+                On the merchant side <br />
+                Merchant Pass website
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="heading3">User journey</div>
-      <div class="text2">
-        <img
-          style="width: 100%"
-          src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/user-journey.png"
-        />
-      </div>
-      <div class="heading3">Values to customer</div>
-      <div class="text2 layout1">
-        <div style="width: 50%; text-align: center">
-          <img
-            class="value-customer-img"
-            src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/curiosity.png"
-          />
+          <div class="heading3">User journey</div>
           <div class="text2">
-            satisfy curiosity about new restaurants and shops
+            <img
+              style="width: 100%"
+              src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/user-journey.png"
+            />
           </div>
-        </div>
-        <div style="width: 50%; text-align: center">
-          <img
-            class="value-customer-img"
-            src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/free.png"
-          />
-          <div class="text2">0 cost</div>
-        </div>
-      </div>
-      <div class="heading3">Values to Meituan</div>
-      <div class="text2 layout1">
-        <div style="width: 28%" class="value">
-          <i class="el-icon-trophy"></i>
-          Provide diverse services to promote Meituan's brand reputation
-        </div>
-        <div style="width: 28%" class="value">
-          <i class="el-icon-trophy"></i>
+          <div class="heading3">Values to customer</div>
+          <div class="text2 layout1">
+            <div style="width: 50%; text-align: center">
+              <img
+                class="value-customer-img"
+                src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/curiosity.png"
+              />
+              <div class="text2">
+                satisfy curiosity about new restaurants and shops
+              </div>
+            </div>
+            <div style="width: 50%; text-align: center">
+              <img
+                class="value-customer-img"
+                src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/free.png"
+              />
+              <div class="text2">0 cost</div>
+            </div>
+          </div>
+          <div class="heading3">Values to Meituan</div>
+          <div class="text2 layout1">
+            <div style="width: 28%" class="value">
+              <i class="el-icon-trophy"></i>
+              Provide diverse services to promote Meituan's brand reputation
+            </div>
+            <div style="width: 28%" class="value">
+              <i class="el-icon-trophy"></i>
 
-          Have a chance to appeal to customers who are sensitive to cost and
-          transfer them to old customers
-        </div>
-        <div style="width: 28%" class="value">
-          <i class="el-icon-trophy"></i>
-          Appeal new merchants who need platforms to promote their services,
-          Meituan can charge commissions and help promote the prosperity of the
-          industry
-        </div>
-      </div>
-      <div class="heading3">Values to merchants</div>
-      <div class="text2 layout1">
-        <div style="width: 45%" class="value">
-          <i class="el-icon-trophy"></i>
-          For merchants who are new to the market, launching free trial activity
-          is a feasible channel of advertisement to appeal new customers
-        </div>
-        <div style="width: 45%" class="value">
-          <i class="el-icon-trophy"></i>
-          Free trial can also help accumulate datapoints of their online shops
-        </div>
-      </div>
-      <div class="heading2">Core Dilemma</div>
-      <div class="heading3">
-        The dissatisfaction of the arrival rate of winning customers
-      </div>
-      <div class="text2">
-        In our salesmen’s interview, merchants reflected the low rate (business
-        secret) of the arrival rate of the winning customers means their
-        investment is not so worthy it.<br />
-        We may translate the core dilemma to the following points:
-      </div>
-      <div class="text2">
-        <li>
-          the basic amount of reachable customers is not enough - not exposed to
-          enough customers
-        </li>
-        <li>
-          the application amount of customers is not enough - no enough
-          attraction/reliability of activities for customers
-        </li>
-        <li>
-          not enough high-quality winning customers to ensure they can obey the
-          appointment
-        </li>
-        <li>
-          the guide of customers is not enough, they feel not enough trust or
-          known about the activity
-        </li>
-        <li>
-          not enough positivity for customers to review after experiencing
-        </li>
-      </div>
-      <div class="heading2">Teams</div>
-      <div class="heading3">Product and Design team(My team)</div>
-      <div class="text2">1 product manager, 1 product designer(me)</div>
-      <div class="heading3">Engineering team</div>
-      <div class="text2">2 front-end engineers, 2 back-end engineers</div>
-      <div class="heading3">Sales team</div>
-      <div class="text2">3 salesmen</div>
-      <div class="heading3">Activity operation team</div>
-      <div class="text2">1 operation staff</div>
-      <div class="heading2">Timeline</div>
-      <div class="text2">
-        <img
-          style="width: 100%"
-          src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/timeline.png"
-        />
-        <!-- <li>Define the goal</li>
+              Have a chance to appeal to customers who are sensitive to cost and
+              transfer them to old customers
+            </div>
+            <div style="width: 28%" class="value">
+              <i class="el-icon-trophy"></i>
+              Appeal new merchants who need platforms to promote their services,
+              Meituan can charge commissions and help promote the prosperity of
+              the industry
+            </div>
+          </div>
+          <div class="heading3">Values to merchants</div>
+          <div class="text2 layout1">
+            <div style="width: 45%" class="value">
+              <i class="el-icon-trophy"></i>
+              For merchants who are new to the market, launching free trial
+              activity is a feasible channel of advertisement to appeal new
+              customers
+            </div>
+            <div style="width: 45%" class="value">
+              <i class="el-icon-trophy"></i>
+              Free trial can also help accumulate datapoints of their online
+              shops
+            </div>
+          </div>
+          <div class="heading2">Core Dilemma</div>
+          <div class="heading3">
+            The dissatisfaction of the arrival rate of winning customers
+          </div>
+          <div class="text2">
+            In our salesmen’s interview, merchants reflected the low rate
+            (business secret) of the arrival rate of the winning customers means
+            their investment is not so worthy it.<br />
+            We may translate the core dilemma to the following points:
+          </div>
+          <div class="text2">
+            <li>
+              the basic amount of reachable customers is not enough - not
+              exposed to enough customers
+            </li>
+            <li>
+              the application amount of customers is not enough - no enough
+              attraction/reliability of activities for customers
+            </li>
+            <li>
+              not enough high-quality winning customers to ensure they can obey
+              the appointment
+            </li>
+            <li>
+              the guide of customers is not enough, they feel not enough trust
+              or known about the activity
+            </li>
+            <li>
+              not enough positivity for customers to review after experiencing
+            </li>
+          </div>
+          <div class="heading2">Teams</div>
+          <div class="heading3">Product and Design team(My team)</div>
+          <div class="text2">1 product manager, 1 product designer(me)</div>
+          <div class="heading3">Engineering team</div>
+          <div class="text2">2 front-end engineers, 2 back-end engineers</div>
+          <div class="heading3">Sales team</div>
+          <div class="text2">3 salesmen</div>
+          <div class="heading3">Activity operation team</div>
+          <div class="text2">1 operation staff</div>
+          <div class="heading2">Timeline</div>
+          <div class="text2">
+            <img
+              style="width: 100%"
+              src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/timeline.png"
+            />
+            <!-- <li>Define the goal</li>
         <li>Stakeholder research & Gather requirements</li>
         <li>Ideation & Build information architecture</li>
         <li>Prototype</li>
         <li>critique & User testing & Iteration</li>
         <li>Data feedback & Evaluation</li> -->
-      </div>
-    </div>
-    <div class="block">
-      <div class="top-bar work-length">
-        <div class="title">Design process</div>
-        <div class="bar-divide"></div>
-      </div>
-      <div class="heading2">Goal confirmation</div>
-      <div class="text2">
-        Appeal more new customers and high-quality customers to the activity and
-        help merchants accumulate more data points from winning customers, which
-        can be concluded to the following indexes:
-      </div>
-      <div class="text2 layout1">
-        <div style="width: 28%" class="value">
-          <img
-            src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/goal.svg"
-          />Participation customers
+          </div>
         </div>
-        <div style="width: 28%" class="value">
-          <img
-            src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/goal.svg"
-          />
-          Arrival rate of winning customers
-        </div>
-        <div style="width: 28%" class="value">
-          <img
-            src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/goal.svg"
-          />
-          Review rate of experienced customers
-        </div>
-      </div>
+        <div class="block">
+          <div class="top-bar work-length">
+            <div class="title">Design process</div>
+            <div class="bar-divide"></div>
+          </div>
+          <div class="heading2">Goal confirmation</div>
+          <div class="text2">
+            Appeal more new customers and high-quality customers to the activity
+            and help merchants accumulate more data points from winning
+            customers, which can be concluded to the following indexes:
+          </div>
+          <div class="text2 layout1">
+            <div style="width: 28%" class="value">
+              <img
+                src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/goal.svg"
+              />Participation customers
+            </div>
+            <div style="width: 28%" class="value">
+              <img
+                src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/goal.svg"
+              />
+              Arrival rate of winning customers
+            </div>
+            <div style="width: 28%" class="value">
+              <img
+                src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/goal.svg"
+              />
+              Review rate of experienced customers
+            </div>
+          </div>
 
-      <div class="heading2">Stakeholder research</div>
-      <div class="heading3">Who are stakeholders</div>
-      <div class="text2">
-        <li>Customers</li>
-        <li>Merchants</li>
-      </div>
-      <div class="heading3">Customer research</div>
-      <div class="user">
-        <div class="user-profile">
-          <div class="user-profile-name">
-            <img
-              style="width: 75px"
-              src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/customer1.jpg"
-            />
-            <div>Wu Huang</div>
+          <div class="heading2">Stakeholder research</div>
+          <div class="heading3">Who are stakeholders</div>
+          <div class="text2">
+            <li>Customers</li>
+            <li>Merchants</li>
           </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Age</div>
-            <div class="user-profile-value">32</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">User name</div>
-            <div class="user-profile-value">哈哈小公主</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Gender</div>
-            <div class="user-profile-value">Female</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Occupation</div>
-            <div class="user-profile-value">Teacher</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Interests</div>
-            <div class="user-profile-value">Makeup, Skincare, Massage</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">App usage time</div>
-            <div class="user-profile-value">4 Years</div>
-          </div>
-        </div>
-        <div class="user-perspective">
-          <div class="user-likes">
-            <div class="user-likes-title">Overall feeling</div>
-            <div class="text2">
-              <li>
-                I enjoy the sense of finding new shops, so I usually tried a
-                free trial. It is better if I can experience it for free for the
-                first time to judge the quality of the service
-              </li>
+          <div class="heading3">Customer research</div>
+          <div class="user">
+            <div class="user-profile">
+              <div class="user-profile-name">
+                <img
+                  style="width: 75px"
+                  src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/customer1.jpg"
+                />
+                <div>Wu Huang</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Age</div>
+                <div class="user-profile-value">32</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">User name</div>
+                <div class="user-profile-value">哈哈小公主</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Gender</div>
+                <div class="user-profile-value">Female</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Occupation</div>
+                <div class="user-profile-value">Teacher</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Interests</div>
+                <div class="user-profile-value">Makeup, Skincare, Massage</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">App usage time</div>
+                <div class="user-profile-value">4 Years</div>
+              </div>
+            </div>
+            <div class="user-perspective">
+              <div class="user-likes">
+                <div class="user-likes-title">Overall feeling</div>
+                <div class="text2">
+                  <li>
+                    I enjoy the sense of finding new shops, so I usually tried a
+                    free trial. It is better if I can experience it for free for
+                    the first time to judge the quality of the service
+                  </li>
+                </div>
+              </div>
+              <div class="user-pain">
+                <div class="user-likes-title">Advices</div>
+                <div class="text2">
+                  <li>
+                    Wonder why the winning rate of the lottery is so low,
+                    sometimes I feel like I will not win so I may be a little
+                    passive to try next time
+                  </li>
+                  <li>
+                    Sometimes the list of services or shops may not be
+                    convenient for me to arrive and have a try, so even if I win
+                    I will not choose to arrive at the shops, and the chance is
+                    wasted by me.
+                  </li>
+                  <li>
+                    I will apply as many services as I can at one time, even if
+                    there are some services I don’t like
+                  </li>
+                  <li>
+                    The notification of the winning message may be a little
+                    simple, I don’t know where to go, and sometimes I may miss
+                    the time because of no reminder.
+                  </li>
+                  <li>
+                    Usually I will not review because of no motivation, after I
+                    get home I just want to take a rest.
+                  </li>
+                  <div class="user-comment"></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="user-pain">
-            <div class="user-likes-title">Advices</div>
-            <div class="text2">
-              <li>
-                Wonder why the winning rate of the lottery is so low, sometimes
-                I feel like I will not win so I may be a little passive to try
-                next time
-              </li>
-              <li>
-                Sometimes the list of services or shops may not be convenient
-                for me to arrive and have a try, so even if I win I will not
-                choose to arrive at the shops, and the chance is wasted by me.
-              </li>
-              <li>
-                I will apply as many services as I can at one time, even if
-                there are some services I don’t like
-              </li>
-              <li>
-                The notification of the winning message may be a little simple,
-                I don’t know where to go, and sometimes I may miss the time
-                because of no reminder.
-              </li>
-              <li>
-                Usually I will not review because of no motivation, after I get
-                home I just want to take a rest.
-              </li>
-              <div class="user-comment"></div>
+          <div class="user">
+            <div class="user-profile">
+              <div class="user-profile-name">
+                <img
+                  style="width: 75px"
+                  src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/customer2.jpg"
+                />
+                <div>Wei Dong</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Age</div>
+                <div class="user-profile-value">27</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">User name</div>
+                <div class="user-profile-value">CV成</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Gender</div>
+                <div class="user-profile-value">Male</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Occupation</div>
+                <div class="user-profile-value">Fitness coach</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Interests</div>
+                <div class="user-profile-value">Food, Fitness</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">App usage time</div>
+                <div class="user-profile-value">2 Years</div>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="user">
-        <div class="user-profile">
-          <div class="user-profile-name">
-            <img
-              style="width: 75px"
-              src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/customer2.jpg"
-            />
-            <div>Wei Dong</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Age</div>
-            <div class="user-profile-value">27</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">User name</div>
-            <div class="user-profile-value">CV成</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Gender</div>
-            <div class="user-profile-value">Male</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Occupation</div>
-            <div class="user-profile-value">Fitness coach</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Interests</div>
-            <div class="user-profile-value">Food, Fitness</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">App usage time</div>
-            <div class="user-profile-value">2 Years</div>
-          </div>
-        </div>
-        <div class="user-perspective">
-          <div class="user-likes">
-            <div class="user-likes-title">Overall feeling</div>
-            <div class="text2">
-              <li>
-                I know this activity but I don’t often try, because although I
-                think it is interesting if I can win, in the end, I think it is
-                a waste of time because I don’t trust my luck.
-              </li>
-            </div>
-          </div>
-          <div class="user-pain">
-            <div class="user-likes-title">Advices</div>
-            <div class="text2">
-              <li>
-                I want to feel less burdened to be involved in this activity,
-                and actually, I will be positive to arrive at the shop and
-                review if I really have this chance.
-              </li>
+            <div class="user-perspective">
+              <div class="user-likes">
+                <div class="user-likes-title">Overall feeling</div>
+                <div class="text2">
+                  <li>
+                    I know this activity but I don’t often try, because although
+                    I think it is interesting if I can win, in the end, I think
+                    it is a waste of time because I don’t trust my luck.
+                  </li>
+                </div>
+              </div>
+              <div class="user-pain">
+                <div class="user-likes-title">Advices</div>
+                <div class="text2">
+                  <li>
+                    I want to feel less burdened to be involved in this
+                    activity, and actually, I will be positive to arrive at the
+                    shop and review if I really have this chance.
+                  </li>
 
-              <div class="user-comment"></div>
+                  <div class="user-comment"></div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- <div class="text2">
+          <!-- <div class="text2">
         <img
           style="width: 100%"
           src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/user-wanghuahua.png"
         />
       </div> -->
-      <div class="heading3">Merchant research</div>
-      <div class="user">
-        <div class="user-profile">
-          <div class="user-profile-name">
-            <img
-              style="width: 75px"
-              src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/merchant1.png"
-            />
-            <div>Tracy Chen</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Age</div>
-            <div class="user-profile-value">34</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Gender</div>
-            <div class="user-profile-value">Female</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Industry</div>
-            <div class="user-profile-value">Manicure</div>
-          </div>
+          <div class="heading3">Merchant research</div>
+          <div class="user">
+            <div class="user-profile">
+              <div class="user-profile-name">
+                <img
+                  style="width: 75px"
+                  src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/merchant1.png"
+                />
+                <div>Tracy Chen</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Age</div>
+                <div class="user-profile-value">34</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Gender</div>
+                <div class="user-profile-value">Female</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Industry</div>
+                <div class="user-profile-value">Manicure</div>
+              </div>
 
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Staff</div>
-            <div class="user-profile-value">8</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Establishing time</div>
-            <div class="user-profile-value">2 Years</div>
-          </div>
-        </div>
-        <div class="user-perspective">
-          <div class="user-likes">
-            <div class="user-likes-title">Why join free trial</div>
-            <div class="text2">
-              <li>
-                I mainly want to attract more customers to experience our
-                services, so this is somehow a great advertisement for me. After
-                they experienced the activity, their reviews are great sources
-                for me to accumulate enough data for my shop’s online page, and
-                this data can also help improve my shop’s rank in Meituan’s
-                recommend list.
-              </li>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Staff</div>
+                <div class="user-profile-value">8</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Establishing time</div>
+                <div class="user-profile-value">2 Years</div>
+              </div>
+            </div>
+            <div class="user-perspective">
+              <div class="user-likes">
+                <div class="user-likes-title">Why join free trial</div>
+                <div class="text2">
+                  <li>
+                    I mainly want to attract more customers to experience our
+                    services, so this is somehow a great advertisement for me.
+                    After they experienced the activity, their reviews are great
+                    sources for me to accumulate enough data for my shop’s
+                    online page, and this data can also help improve my shop’s
+                    rank in Meituan’s recommend list.
+                  </li>
+                </div>
+              </div>
+              <div class="user-pain">
+                <div class="user-likes-title">Complaints</div>
+                <div class="text2">
+                  Compared to my cost of joining this activity, I didn’t get
+                  enough arriving customers, and after a few months, I did not
+                  receive equal payback from the free trial. So I think I may
+                  lose my patience in continuing to invest if this situation
+                  doesn’t change for some time.<br />
+                  Q: What is your ideal index for this activity?<br />
+                  A: The arrival rate should be improved by at least 20%.<br />
+                  Q: What is your final target for joining this activity? <br />
+                  A: Improve my customer amount by introducing new customers and
+                  putting advertisements through this activity.
+
+                  <div class="user-comment"></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="user-pain">
-            <div class="user-likes-title">Complaints</div>
-            <div class="text2">
-              Compared to my cost of joining this activity, I didn’t get enough
-              arriving customers, and after a few months, I did not receive
-              equal payback from the free trial. So I think I may lose my
-              patience in continuing to invest if this situation doesn’t change
-              for some time.<br />
-              Q: What is your ideal index for this activity?<br />
-              A: The arrival rate should be improved by at least 20%.<br />
-              Q: What is your final target for joining this activity? <br />
-              A: Improve my customer amount by introducing new customers and
-              putting advertisements through this activity.
-
-              <div class="user-comment"></div>
-            </div>
+          <div class="heading2">Ideation</div>
+          <div class="heading3">Goal definition</div>
+          <div class="text2">
+            Improve the following indexes
+            <li>Participation customers</li>
+            <li>Arrival rate of winning customers</li>
+            <li>Review rate of experiencing customers</li>
           </div>
-        </div>
-      </div>
-      <div class="heading2">Ideation</div>
-      <div class="heading3">Goal definition</div>
-      <div class="text2">
-        Improve the following indexes
-        <li>Participation customers</li>
-        <li>Arrival rate of winning customers</li>
-        <li>Review rate of experiencing customers</li>
-      </div>
-      <!-- <div class="heading3">
+          <!-- <div class="heading3">
         What are the core target and deficiency of each phase
       </div>
       <div class="text2">
@@ -454,801 +460,843 @@
           </el-table-column>
         </el-table>
       </div> -->
-      <div class="heading3">
-        What are deficiencies and feasible solutions of each phase
-      </div>
-      <el-collapse v-model="activeName" accordion>
-        <el-collapse-item
-          v-for="(data, i) in tableData"
-          :title="data.phase"
-          :name="i"
-          :key="i"
-        >
-          <div class="phase">
-            <div class="phase-value">
-              <div class="phase-value-title"></div>
-              <div class="phase-value-content">
-                {{ data.target }}
+          <div class="heading3">
+            What are deficiencies and feasible solutions of each phase
+          </div>
+          <el-collapse v-model="activeName" accordion>
+            <el-collapse-item
+              v-for="(data, i) in tableData"
+              :title="data.phase"
+              :name="i"
+              :key="i"
+            >
+              <div class="phase">
+                <div class="phase-value">
+                  <div class="phase-value-title"></div>
+                  <div class="phase-value-content">
+                    {{ data.target }}
+                  </div>
+                </div>
+                <div class="phase-bottom">
+                  <div class="phase-deficiencies">
+                    <div style="flex: 1">
+                      <div
+                        v-for="(deficiency, j) in data.deficiencies"
+                        :key="j"
+                        class="phase-deficiency"
+                      >
+                        {{ deficiency }}
+                      </div>
+                    </div>
+                  </div>
+                  <div class="phase-solutions">
+                    <div style="flex: 1">
+                      <div
+                        v-for="(solution, k) in data.solutions"
+                        :key="k"
+                        class="phase-solution"
+                      >
+                        <div class="phase-solution-title">
+                          {{ solution.title }}
+                        </div>
+                        <div class="phase-solution-content">
+                          {{ solution.content }}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </el-collapse-item>
+          </el-collapse>
+          <div v-if="false" class="data-feedback title-bar">
+            <div class="feedback-index">
+              <div>Phase and target</div>
             </div>
-            <div class="phase-bottom">
-              <div class="phase-deficiencies">
-                <div style="flex: 1">
-                  <div
-                    v-for="(deficiency, j) in data.deficiencies"
-                    :key="j"
-                    class="phase-deficiency"
-                  >
-                    {{ deficiency }}
-                  </div>
-                </div>
-              </div>
-              <div class="phase-solutions">
-                <div style="flex: 1">
-                  <div
-                    v-for="(solution, k) in data.solutions"
-                    :key="k"
-                    class="phase-solution"
-                  >
-                    <div class="phase-solution-title">
-                      {{ solution.title }}
-                    </div>
-                    <div class="phase-solution-content">
-                      {{ solution.content }}
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="feedback-datas">
+              <div>Deficiencies</div>
+            </div>
+            <div class="feedback-datas">
+              <div>Solutions</div>
             </div>
           </div>
-        </el-collapse-item>
-      </el-collapse>
-      <div v-if="false" class="data-feedback title-bar">
-        <div class="feedback-index">
-          <div>Phase and target</div>
-        </div>
-        <div class="feedback-datas">
-          <div>Deficiencies</div>
-        </div>
-        <div class="feedback-datas">
-          <div>Solutions</div>
-        </div>
-      </div>
 
-      <template v-if="false">
-        <div class="data-feedback">
-          <div class="feedback-index">
-            <div class="feedback-title">Merchant - Register</div>
-            <div class="feedback-subtitle">
-              Appeal more merchants to create more prosperous industry
-            </div>
-          </div>
-          <div class="feedback-datas">
-            <div class="feedback-data">
-              <!-- <div class="feedback-data-content">
+          <template v-if="false">
+            <div class="data-feedback">
+              <div class="feedback-index">
+                <div class="feedback-title">Merchant - Register</div>
+                <div class="feedback-subtitle">
+                  Appeal more merchants to create more prosperous industry
+                </div>
+              </div>
+              <div class="feedback-datas">
+                <div class="feedback-data">
+                  <!-- <div class="feedback-data-content">
               Participation fee adjustment
             </div> -->
-              <div class="feedback-data-title">
-                Vague income of this compaign
+                  <div class="feedback-data-title">
+                    Vague income of this compaign
+                  </div>
+                </div>
+                <div class="feedback-data">
+                  <!-- <div class="feedback-data-content">Expectation information</div> -->
+                  <div class="feedback-data-title">
+                    Unreasonable participation fee
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="feedback-data">
-              <!-- <div class="feedback-data-content">Expectation information</div> -->
-              <div class="feedback-data-title">
-                Unreasonable participation fee
-              </div>
-            </div>
-          </div>
-          <div class="feedback-datas">
-            <div class="feedback-data">
-              <div class="feedback-data-content">
-                Participation fee adjustment
-              </div>
-              <div class="feedback-data-title">
-                Reasonable participation fee: need to communicate with market
-                team
-              </div>
-            </div>
-            <div class="feedback-data">
-              <div class="feedback-data-content">Expectation information</div>
+              <div class="feedback-datas">
+                <div class="feedback-data">
+                  <div class="feedback-data-content">
+                    Participation fee adjustment
+                  </div>
+                  <div class="feedback-data-title">
+                    Reasonable participation fee: need to communicate with
+                    market team
+                  </div>
+                </div>
+                <div class="feedback-data">
+                  <div class="feedback-data-content">
+                    Expectation information
+                  </div>
 
-              <div class="feedback-data-title">
-                Provide expected upcoming new customers, and present possible
-                reachable customers/income to merchants
+                  <div class="feedback-data-title">
+                    Provide expected upcoming new customers, and present
+                    possible reachable customers/income to merchants
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="data-feedback">
-          <div class="feedback-index">
-            <div class="feedback-title">Merchant - Trial management</div>
-            <div class="feedback-subtitle">
-              Help merchant publish activities more precisely and efficiently
-            </div>
-          </div>
-          <div class="feedback-datas">
-            <div class="feedback-data">
-              <div class="feedback-data-title">
-                No system to adjust the winning amount, application amount
+            <div class="data-feedback">
+              <div class="feedback-index">
+                <div class="feedback-title">Merchant - Trial management</div>
+                <div class="feedback-subtitle">
+                  Help merchant publish activities more precisely and
+                  efficiently
+                </div>
+              </div>
+              <div class="feedback-datas">
+                <div class="feedback-data">
+                  <div class="feedback-data-title">
+                    No system to adjust the winning amount, application amount
+                  </div>
+                </div>
+              </div>
+              <div class="feedback-datas">
+                <div class="feedback-data">
+                  <div class="feedback-data-content">Amount adjustment</div>
+                  <div class="feedback-data-title">
+                    Enable merchants to adjust the winning amount and
+                    application amount flexibly after publishing the trial
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="feedback-datas">
-            <div class="feedback-data">
-              <div class="feedback-data-content">Amount adjustment</div>
-              <div class="feedback-data-title">
-                Enable merchants to adjust the winning amount and application
-                amount flexibly after publishing the trial
+            <div class="data-feedback">
+              <div class="feedback-index">
+                <div class="feedback-title">
+                  Merchant - Notification management
+                </div>
+                <div class="feedback-subtitle">
+                  Give customers a sense of surprise and give enough guidance
+                </div>
+              </div>
+              <div class="feedback-datas">
+                <div class="feedback-data">
+                  <div class="feedback-data-title">
+                    Winning notification doesn’t cover all channels of Meituan,
+                    especially about Merchants' own channel
+                  </div>
+                </div>
+                <div class="feedback-data">
+                  <div class="feedback-data-title">
+                    No customization feature for merchants, they can't send some
+                    specific guidances
+                  </div>
+                </div>
+              </div>
+              <div class="feedback-datas">
+                <div class="feedback-data">
+                  <div class="feedback-data-content">
+                    Notification customization
+                  </div>
+
+                  <div class="feedback-data-title">
+                    Enable merchant to customize their own notification during
+                    different phases
+                  </div>
+                </div>
+                <div class="feedback-data">
+                  <div class="feedback-data-content">
+                    Notification channel coverage
+                  </div>
+
+                  <div class="feedback-data-title">
+                    Notification covers merchants' own channel, help merchants
+                    accumulate their own subscriptions
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="data-feedback">
-          <div class="feedback-index">
-            <div class="feedback-title">Merchant - Notification management</div>
-            <div class="feedback-subtitle">
-              Give customers a sense of surprise and give enough guidance
-            </div>
-          </div>
-          <div class="feedback-datas">
-            <div class="feedback-data">
-              <div class="feedback-data-title">
-                Winning notification doesn’t cover all channels of Meituan,
-                especially about Merchants' own channel
+            <div class="data-feedback">
+              <div class="feedback-index">
+                <div class="feedback-title">Customer - Browse and apply</div>
+                <div class="feedback-subtitle">
+                  Attract more customers especially high-quality customers to
+                  apply
+                </div>
+              </div>
+              <div class="feedback-datas">
+                <div class="feedback-data">
+                  <div class="feedback-data-title">
+                    No highlight of the lottery rate or the winning rate is too
+                    low, many customers may feel not secure to win, the low
+                    winning rate may let the activity seem to be a joke
+                  </div>
+                </div>
+                <div class="feedback-data">
+                  <div class="feedback-data-title">
+                    No limitation or condition of participation, many
+                    participating customers don’t even know the basic rules and
+                    information about the provided item, and they will apply as
+                    many as possible to increase their lottery rate, but in the
+                    end, they don’t even have the condition to arrive at the
+                    shop
+                  </div>
+                </div>
+              </div>
+              <div class="feedback-datas">
+                <div class="feedback-data">
+                  <div class="feedback-data-content">
+                    Highlight winning amount
+                  </div>
+                  <div class="feedback-data-title">
+                    Highlight the amount of winning customers to give a sense of
+                    more winning opportunities
+                  </div>
+                </div>
+                <div class="feedback-data">
+                  <div class="feedback-data-content">
+                    Limit applicant amount
+                  </div>
+                  <div class="feedback-data-title">
+                    Give merchants the ability to limite amount of applicants
+                  </div>
+                </div>
+                <div class="feedback-data">
+                  <div class="feedback-data-content">
+                    Limit application times
+                  </div>
+
+                  <div class="feedback-data-title">
+                    Limit application times per day to let customers select the
+                    most suitable trials
+                  </div>
+                </div>
+                <div class="feedback-data">
+                  <div class="feedback-data-content">
+                    Inform the whole process
+                  </div>
+                  <div class="feedback-data-title">
+                    Inform customers of the whole participation process when
+                    first apply
+                  </div>
+                </div>
+                <div class="feedback-data">
+                  <div class="feedback-data-content">
+                    Review experience limitation
+                  </div>
+
+                  <div class="feedback-data-title">
+                    Add limitation that all the applicants must have experiences
+                    of writing reviews
+                  </div>
+                </div>
+                <div class="feedback-data">
+                  <div class="feedback-data-content">
+                    Add reviews to browsing page
+                  </div>
+                  <div class="feedback-data-title">
+                    Add customer reviews to browse page, this can improve the
+                    trust of customers and lead them to be accustomed to review
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="feedback-data">
-              <div class="feedback-data-title">
-                No customization feature for merchants, they can't send some
-                specific guidances
+            <div class="data-feedback">
+              <div class="feedback-index">
+                <div class="feedback-title">Customer - Wait / give</div>
+                <div class="feedback-subtitle">
+                  Keep in touch with customers
+                </div>
+              </div>
+              <div class="feedback-datas">
+                <div class="feedback-data">
+                  <div class="feedback-data-title">
+                    No notification, which may let customers feel they are not
+                    paid attention by merchants, this is also an opportunity for
+                    merchant to make advertisement
+                  </div>
+                </div>
+              </div>
+              <div class="feedback-datas">
+                <div class="feedback-data">
+                  <div class="feedback-data-content">
+                    Notification customization
+                  </div>
+                  <div class="feedback-data-title">
+                    Allow merchants to send message to customers once to make
+                    advertisement and inform the lottery date (can be integrated
+                    to the merchant notification customization feature)
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="data-feedback">
+              <div class="feedback-index">
+                <div class="feedback-title">System - Generate winning list</div>
+                <div class="feedback-subtitle">
+                  Select winning customers with best quality
+                </div>
+              </div>
+              <div class="feedback-datas">
+                <div class="feedback-data">
+                  <div class="feedback-data-title">
+                    No filter strategy, all customers’ winning chances are the
+                    same, although it means equality but it not efficient in
+                    business
+                  </div>
+                </div>
+                <div class="feedback-data">
+                  <div class="feedback-data-title">
+                    If someone cannot reserve the service, there is no strategy
+                    to deal with such a situation
+                  </div>
+                </div>
+                <div class="feedback-data">
+                  <div class="feedback-data-title">
+                    There is no strategy for merchants who want to change
+                    winning numbers, which usually happen when merchants’
+                    business environment change
+                  </div>
+                </div>
+              </div>
+              <div class="feedback-datas">
+                <div class="feedback-data">
+                  <div class="feedback-data-content">Rating system</div>
+                  <div class="feedback-data-title">
+                    Change lottery strategy to rate the applicants according our
+                    customer’s database
+                  </div>
+                </div>
+                <div class="feedback-data">
+                  <div class="feedback-data-content">Waitlist system</div>
+                  <div class="feedback-data-title">
+                    Add a system to complement winning list when the winning
+                    applicant gives up
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="data-feedback">
+              <div class="feedback-index">
+                <div class="feedback-title">
+                  Customer - Reserve and arrive / give up
+                </div>
+                <div class="feedback-subtitle">
+                  Select winning customers with best quality
+                </div>
+              </div>
+              <div class="feedback-datas">
+                <div class="feedback-data">
+                  <div class="feedback-data-content">
+                    Arrival date adjustment
+                  </div>
+
+                  <div class="feedback-data-title">
+                    Allow customer to change there arrival date after confirming
+                    it
+                  </div>
+                </div>
+                <div class="feedback-data">
+                  <div class="feedback-data-content">
+                    Punishment for no reservation
+                  </div>
+                  <div class="feedback-data-title">
+                    Forbid customer to participate in similar activities for a
+                    while if they give up reservation(break the rules)
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="data-feedback">
+              <div class="feedback-index">
+                <div class="feedback-title">Merchant - provide service</div>
+                <div class="feedback-subtitle">
+                  Manage customers’ status and let them feel everything is in
+                  arrangement
+                </div>
+              </div>
+              <div class="feedback-datas">
+                <div class="feedback-data">
+                  <div class="feedback-data-content">
+                    Reservation management
+                  </div>
+
+                  <div class="feedback-data-title">
+                    Give merchants ability to manage reservation, including scan
+                    customers’ QR code to complete check-in progress, and
+                    merchants do not have the authority to change customers’
+                    status
+                  </div>
+                </div>
+                <div class="feedback-data">
+                  <div class="feedback-data-content">Report portal</div>
+                  <div class="feedback-data-title">
+                    Add report portal in customers’ application page after they
+                    complete the service, the report will be passed to Meituan’s
+                    customer service center and can be counted by our activity
+                    management team
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="data-feedback">
+              <div class="feedback-index">
+                <div class="feedback-title">Customer - Review</div>
+                <div class="feedback-subtitle">
+                  Stimulate customers to review
+                </div>
+              </div>
+              <div class="feedback-datas">
+                <div class="feedback-data">
+                  <div class="feedback-data-content">
+                    Punishment for no review
+                  </div>
+
+                  <div class="feedback-data-title">
+                    Punishment of no review: forbid customers who don’t review
+                    to participate in similar activities for a while
+                  </div>
+                </div>
+                <div class="feedback-data">
+                  <div class="feedback-data-content">Review credit</div>
+                  <div class="feedback-data-title">
+                    Reward customer with Meituan credits after they complete the
+                    review
+                  </div>
+                </div>
+                <div class="feedback-data">
+                  <div class="feedback-data-content">
+                    Notification customization
+                  </div>
+
+                  <div class="feedback-data-title">
+                    Give merchants one chance to send customized notification to
+                    customers when they complete the experience but don’t review
+                    after a few days (can be integrated to notification
+                    customization feature)
+                  </div>
+                </div>
+                <div class="feedback-data">
+                  <div class="feedback-data-content">
+                    Add reviews to browsing page
+                  </div>
+
+                  <div class="feedback-data-title">
+                    Add customers’ reviews to the browse page of free trial,
+                    build an active environment and improve the trust of
+                    customers to our trials
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="data-feedback">
+              <div class="feedback-index">
+                <div class="feedback-title">Merchant - Data statistics</div>
+                <div class="feedback-subtitle">
+                  Help merchants maintain these customers to make larger
+                  business
+                </div>
+              </div>
+              <div class="feedback-datas">
+                <div class="feedback-data">
+                  <div class="feedback-data-content">Review filter</div>
+                  <div class="feedback-data-title">
+                    Add a filter option of free trial to customer’s review page,
+                    which can help them filter out reviews from free
+                    trial(Belong to Merchant Pass platform team)
+                  </div>
+                </div>
+                <div class="feedback-data">
+                  <div class="feedback-data-content">
+                    Modify user rules of free trial
+                  </div>
+                  <div class="feedback-data-title">
+                    Add explanation about users' privacy, highlighting the
+                    hidden phone number or other private information in our
+                    marchant system
+                  </div>
+                </div>
+              </div>
+            </div>
+          </template>
+
+          <div class="heading3">
+            What is the priority of these solutions/features
           </div>
-          <div class="feedback-datas">
-            <div class="feedback-data">
-              <div class="feedback-data-content">
-                Notification customization
+          <div class="text2">
+            <div class="priorities">
+              <div class="priority">
+                <div class="priority-high">extremely high</div>
+                <div class="priority-feature">Rating system</div>
+              </div>
+              <div class="priority">
+                <div class="priority-high">extremely high</div>
+                <div class="priority-feature">Waitlist system</div>
+              </div>
+              <div class="priority">
+                <div class="priority-high">high</div>
+                <div class="priority-feature">Reservation management</div>
+              </div>
+              <div class="priority">
+                <div class="priority-high">high</div>
+                <div class="priority-feature">Review credit</div>
+              </div>
+              <div class="priority">
+                <div class="priority-high">high</div>
+                <div class="priority-feature">Review experience limitation</div>
+              </div>
+              <div class="priority">
+                <div class="priority-high">high</div>
+                <div class="priority-feature">
+                  Punishment for no reservation
+                </div>
+              </div>
+              <div class="priority">
+                <div class="priority-high">high</div>
+                <div class="priority-feature">Punishment for no review</div>
+              </div>
+              <div class="priority">
+                <div class="priority-high">high</div>
+                <div class="priority-feature">Inform the whole process</div>
+              </div>
+              <div class="priority">
+                <div class="priority-medium">medium</div>
+                <div class="priority-feature">Add reviews to browsing page</div>
               </div>
 
-              <div class="feedback-data-title">
-                Enable merchant to customize their own notification during
-                different phases
+              <div class="priority">
+                <div class="priority-medium">medium</div>
+                <div class="priority-feature">Notification customization</div>
+              </div>
+              <div class="priority">
+                <div class="priority-medium">medium</div>
+                <div class="priority-feature">Arrival date adjustment</div>
+              </div>
+              <div class="priority">
+                <div class="priority-medium">medium</div>
+                <div class="priority-feature">Highlight winning amount</div>
+              </div>
+              <div class="priority">
+                <div class="priority-medium">medium</div>
+                <div class="priority-feature">Limit application times</div>
+              </div>
+              <div class="priority">
+                <div class="priority-medium">medium</div>
+                <div class="priority-feature">Amount adjustment</div>
+              </div>
+              <div class="priority">
+                <div class="priority-medium">medium</div>
+                <div class="priority-feature">
+                  Modify user rules of free trial
+                </div>
+              </div>
+              <div class="priority">
+                <div class="priority-medium">medium</div>
+                <div class="priority-feature">Review filter</div>
+              </div>
+              <div class="priority">
+                <div class="priority-low">low</div>
+                <div class="priority-feature">Report portal</div>
+              </div>
+              <div class="priority">
+                <div class="priority-low">low</div>
+                <div class="priority-feature">Notification coverage</div>
+              </div>
+              <div class="priority">
+                <div class="priority-low">low</div>
+                <div class="priority-feature">Expectation information</div>
+              </div>
+              <div class="priority">
+                <div class="priority-side">side</div>
+                <div class="priority-feature">Participation fee adjustment</div>
+              </div>
+              <div class="priority">
+                <div class="priority-side">side</div>
+                <div class="priority-feature">Limit applicant amount</div>
               </div>
             </div>
-            <div class="feedback-data">
-              <div class="feedback-data-content">
-                Notification channel coverage
-              </div>
-
-              <div class="feedback-data-title">
-                Notification covers merchants' own channel, help merchants
-                accumulate their own subscriptions
-              </div>
-            </div>
+          </div>
+          <div class="heading2">Iterative design and development</div>
+          <div class="text2">
+            According to our priority of updated features, we designed each
+            feature based on the priority, then we cooperated with engineering
+            team to evaluate the development schedule, finally we spent 3 months
+            to complete all features except priority “side”.
+          </div>
+          <div class="heading2">Prototype</div>
+          <div class="text2">
+            Here is the final overall prototype that contains all features,
+            these features were designed iteratively.
+          </div>
+          <div class="text2">
+            <iframe
+              style="border: 1px solid rgba(0, 0, 0, 0.1); aspect-ratio: 16/9"
+              width="100%"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FndOhLLoAYQVkPjN2N19JMT%2Fportfolio%3Fnode-id%3D402%253A3089%26t%3DD4JoMQjkSXnJrKPD-1"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
-        <div class="data-feedback">
-          <div class="feedback-index">
-            <div class="feedback-title">Customer - Browse and apply</div>
-            <div class="feedback-subtitle">
-              Attract more customers especially high-quality customers to apply
-            </div>
+        <div class="block">
+          <div class="top-bar work-length">
+            <div class="title">Feedback</div>
+            <div class="bar-divide"></div>
           </div>
-          <div class="feedback-datas">
-            <div class="feedback-data">
-              <div class="feedback-data-title">
-                No highlight of the lottery rate or the winning rate is too low,
-                many customers may feel not secure to win, the low winning rate
-                may let the activity seem to be a joke
-              </div>
+          <div class="heading2">Data feedback</div>
+          <div class="data-feedback">
+            <div class="feedback-index">
+              <img
+                width="200px"
+                src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/arrival-rate.png"
+              />
+              <div class="feedback-title"></div>
             </div>
-            <div class="feedback-data">
-              <div class="feedback-data-title">
-                No limitation or condition of participation, many participating
-                customers don’t even know the basic rules and information about
-                the provided item, and they will apply as many as possible to
-                increase their lottery rate, but in the end, they don’t even
-                have the condition to arrive at the shop
-              </div>
-            </div>
-          </div>
-          <div class="feedback-datas">
-            <div class="feedback-data">
-              <div class="feedback-data-content">Highlight winning amount</div>
-              <div class="feedback-data-title">
-                Highlight the amount of winning customers to give a sense of
-                more winning opportunities
-              </div>
-            </div>
-            <div class="feedback-data">
-              <div class="feedback-data-content">Limit applicant amount</div>
-              <div class="feedback-data-title">
-                Give merchants the ability to limite amount of applicants
-              </div>
-            </div>
-            <div class="feedback-data">
-              <div class="feedback-data-content">Limit application times</div>
-
-              <div class="feedback-data-title">
-                Limit application times per day to let customers select the most
-                suitable trials
-              </div>
-            </div>
-            <div class="feedback-data">
-              <div class="feedback-data-content">Inform the whole process</div>
-              <div class="feedback-data-title">
-                Inform customers of the whole participation process when first
-                apply
-              </div>
-            </div>
-            <div class="feedback-data">
-              <div class="feedback-data-content">
-                Review experience limitation
-              </div>
-
-              <div class="feedback-data-title">
-                Add limitation that all the applicants must have experiences of
-                writing reviews
-              </div>
-            </div>
-            <div class="feedback-data">
-              <div class="feedback-data-content">
-                Add reviews to browsing page
-              </div>
-              <div class="feedback-data-title">
-                Add customer reviews to browse page, this can improve the trust
-                of customers and lead them to be accustomed to review
+            <div class="feedback-datas">
+              <div class="feedback-data">
+                <div class="feedback-data-title">
+                  Arrival rate of winning applicants
+                </div>
+                <div class="feedback-data-content">Imrpoved by 8%</div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="data-feedback">
-          <div class="feedback-index">
-            <div class="feedback-title">Customer - Wait / give</div>
-            <div class="feedback-subtitle">Keep in touch with customers</div>
-          </div>
-          <div class="feedback-datas">
-            <div class="feedback-data">
-              <div class="feedback-data-title">
-                No notification, which may let customers feel they are not paid
-                attention by merchants, this is also an opportunity for merchant
-                to make advertisement
+          <div class="data-feedback">
+            <div class="feedback-index">
+              <img
+                width="200px"
+                src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/review-rate.png"
+              />
+              <div class="feedback-title"></div>
+            </div>
+            <div class="feedback-datas">
+              <div class="feedback-data">
+                <div class="feedback-data-title">
+                  Review rate of experienced customers
+                </div>
+                <div class="feedback-data-content">Raise from 60% to 80%</div>
               </div>
             </div>
-          </div>
-          <div class="feedback-datas">
-            <div class="feedback-data">
-              <div class="feedback-data-content">
-                Notification customization
-              </div>
-              <div class="feedback-data-title">
-                Allow merchants to send message to customers once to make
-                advertisement and inform the lottery date (can be integrated to
-                the merchant notification customization feature)
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="data-feedback">
-          <div class="feedback-index">
-            <div class="feedback-title">System - Generate winning list</div>
-            <div class="feedback-subtitle">
-              Select winning customers with best quality
-            </div>
-          </div>
-          <div class="feedback-datas">
-            <div class="feedback-data">
-              <div class="feedback-data-title">
-                No filter strategy, all customers’ winning chances are the same,
-                although it means equality but it not efficient in business
-              </div>
-            </div>
-            <div class="feedback-data">
-              <div class="feedback-data-title">
-                If someone cannot reserve the service, there is no strategy to
-                deal with such a situation
-              </div>
-            </div>
-            <div class="feedback-data">
-              <div class="feedback-data-title">
-                There is no strategy for merchants who want to change winning
-                numbers, which usually happen when merchants’ business
-                environment change
-              </div>
-            </div>
-          </div>
-          <div class="feedback-datas">
-            <div class="feedback-data">
-              <div class="feedback-data-content">Rating system</div>
-              <div class="feedback-data-title">
-                Change lottery strategy to rate the applicants according our
-                customer’s database
-              </div>
-            </div>
-            <div class="feedback-data">
-              <div class="feedback-data-content">Waitlist system</div>
-              <div class="feedback-data-title">
-                Add a system to complement winning list when the winning
-                applicant gives up
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="data-feedback">
-          <div class="feedback-index">
-            <div class="feedback-title">
-              Customer - Reserve and arrive / give up
-            </div>
-            <div class="feedback-subtitle">
-              Select winning customers with best quality
-            </div>
-          </div>
-          <div class="feedback-datas">
-            <div class="feedback-data">
-              <div class="feedback-data-content">Arrival date adjustment</div>
-
-              <div class="feedback-data-title">
-                Allow customer to change there arrival date after confirming it
-              </div>
-            </div>
-            <div class="feedback-data">
-              <div class="feedback-data-content">
-                Punishment for no reservation
-              </div>
-              <div class="feedback-data-title">
-                Forbid customer to participate in similar activities for a while
-                if they give up reservation(break the rules)
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="data-feedback">
-          <div class="feedback-index">
-            <div class="feedback-title">Merchant - provide service</div>
-            <div class="feedback-subtitle">
-              Manage customers’ status and let them feel everything is in
-              arrangement
-            </div>
-          </div>
-          <div class="feedback-datas">
-            <div class="feedback-data">
-              <div class="feedback-data-content">Reservation management</div>
-
-              <div class="feedback-data-title">
-                Give merchants ability to manage reservation, including scan
-                customers’ QR code to complete check-in progress, and merchants
-                do not have the authority to change customers’ status
-              </div>
-            </div>
-            <div class="feedback-data">
-              <div class="feedback-data-content">Report portal</div>
-              <div class="feedback-data-title">
-                Add report portal in customers’ application page after they
-                complete the service, the report will be passed to Meituan’s
-                customer service center and can be counted by our activity
-                management team
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="data-feedback">
-          <div class="feedback-index">
-            <div class="feedback-title">Customer - Review</div>
-            <div class="feedback-subtitle">Stimulate customers to review</div>
-          </div>
-          <div class="feedback-datas">
-            <div class="feedback-data">
-              <div class="feedback-data-content">Punishment for no review</div>
-
-              <div class="feedback-data-title">
-                Punishment of no review: forbid customers who don’t review to
-                participate in similar activities for a while
-              </div>
-            </div>
-            <div class="feedback-data">
-              <div class="feedback-data-content">Review credit</div>
-              <div class="feedback-data-title">
-                Reward customer with Meituan credits after they complete the
-                review
-              </div>
-            </div>
-            <div class="feedback-data">
-              <div class="feedback-data-content">
-                Notification customization
-              </div>
-
-              <div class="feedback-data-title">
-                Give merchants one chance to send customized notification to
-                customers when they complete the experience but don’t review
-                after a few days (can be integrated to notification
-                customization feature)
-              </div>
-            </div>
-            <div class="feedback-data">
-              <div class="feedback-data-content">
-                Add reviews to browsing page
-              </div>
-
-              <div class="feedback-data-title">
-                Add customers’ reviews to the browse page of free trial, build
-                an active environment and improve the trust of customers to our
-                trials
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="data-feedback">
-          <div class="feedback-index">
-            <div class="feedback-title">Merchant - Data statistics</div>
-            <div class="feedback-subtitle">
-              Help merchants maintain these customers to make larger business
-            </div>
-          </div>
-          <div class="feedback-datas">
-            <div class="feedback-data">
-              <div class="feedback-data-content">Review filter</div>
-              <div class="feedback-data-title">
-                Add a filter option of free trial to customer’s review page,
-                which can help them filter out reviews from free trial(Belong to
-                Merchant Pass platform team)
-              </div>
-            </div>
-            <div class="feedback-data">
-              <div class="feedback-data-content">
-                Modify user rules of free trial
-              </div>
-              <div class="feedback-data-title">
-                Add explanation about users' privacy, highlighting the hidden
-                phone number or other private information in our marchant system
-              </div>
-            </div>
-          </div>
-        </div>
-      </template>
-
-      <div class="heading3">
-        What is the priority of these solutions/features
-      </div>
-      <div class="text2">
-        <div class="priorities">
-          <div class="priority">
-            <div class="priority-high">extremely high</div>
-            <div class="priority-feature">Rating system</div>
-          </div>
-          <div class="priority">
-            <div class="priority-high">extremely high</div>
-            <div class="priority-feature">Waitlist system</div>
-          </div>
-          <div class="priority">
-            <div class="priority-high">high</div>
-            <div class="priority-feature">Reservation management</div>
-          </div>
-          <div class="priority">
-            <div class="priority-high">high</div>
-            <div class="priority-feature">Review credit</div>
-          </div>
-          <div class="priority">
-            <div class="priority-high">high</div>
-            <div class="priority-feature">Review experience limitation</div>
-          </div>
-          <div class="priority">
-            <div class="priority-high">high</div>
-            <div class="priority-feature">Punishment for no reservation</div>
-          </div>
-          <div class="priority">
-            <div class="priority-high">high</div>
-            <div class="priority-feature">Punishment for no review</div>
-          </div>
-          <div class="priority">
-            <div class="priority-high">high</div>
-            <div class="priority-feature">Inform the whole process</div>
-          </div>
-          <div class="priority">
-            <div class="priority-medium">medium</div>
-            <div class="priority-feature">Add reviews to browsing page</div>
-          </div>
-
-          <div class="priority">
-            <div class="priority-medium">medium</div>
-            <div class="priority-feature">Notification customization</div>
-          </div>
-          <div class="priority">
-            <div class="priority-medium">medium</div>
-            <div class="priority-feature">Arrival date adjustment</div>
-          </div>
-          <div class="priority">
-            <div class="priority-medium">medium</div>
-            <div class="priority-feature">Highlight winning amount</div>
-          </div>
-          <div class="priority">
-            <div class="priority-medium">medium</div>
-            <div class="priority-feature">Limit application times</div>
-          </div>
-          <div class="priority">
-            <div class="priority-medium">medium</div>
-            <div class="priority-feature">Amount adjustment</div>
-          </div>
-          <div class="priority">
-            <div class="priority-medium">medium</div>
-            <div class="priority-feature">Modify user rules of free trial</div>
-          </div>
-          <div class="priority">
-            <div class="priority-medium">medium</div>
-            <div class="priority-feature">Review filter</div>
-          </div>
-          <div class="priority">
-            <div class="priority-low">low</div>
-            <div class="priority-feature">Report portal</div>
-          </div>
-          <div class="priority">
-            <div class="priority-low">low</div>
-            <div class="priority-feature">Notification coverage</div>
-          </div>
-          <div class="priority">
-            <div class="priority-low">low</div>
-            <div class="priority-feature">Expectation information</div>
-          </div>
-          <div class="priority">
-            <div class="priority-side">side</div>
-            <div class="priority-feature">Participation fee adjustment</div>
-          </div>
-          <div class="priority">
-            <div class="priority-side">side</div>
-            <div class="priority-feature">Limit applicant amount</div>
-          </div>
-        </div>
-      </div>
-      <div class="heading2">Iterative design and development</div>
-      <div class="text2">
-        According to our priority of updated features, we designed each feature
-        based on the priority, then we cooperated with engineering team to
-        evaluate the development schedule, finally we spent 3 months to complete
-        all features except priority “side”.
-      </div>
-      <div class="heading2">Prototype</div>
-      <div class="text2">
-        Here is the final overall prototype that contains all features, these
-        features were designed iteratively.
-      </div>
-      <div class="text2">
-        <iframe
-          style="border: 1px solid rgba(0, 0, 0, 0.1); aspect-ratio: 16/9"
-          width="100%"
-          src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FndOhLLoAYQVkPjN2N19JMT%2Fportfolio%3Fnode-id%3D402%253A3089%26t%3DD4JoMQjkSXnJrKPD-1"
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-    <div class="block">
-      <div class="top-bar work-length">
-        <div class="title">Feedback</div>
-        <div class="bar-divide"></div>
-      </div>
-      <div class="heading2">Data feedback</div>
-      <div class="data-feedback">
-        <div class="feedback-index">
-          <img
-            width="200px"
-            src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/arrival-rate.png"
-          />
-          <div class="feedback-title"></div>
-        </div>
-        <div class="feedback-datas">
-          <div class="feedback-data">
-            <div class="feedback-data-title">
-              Arrival rate of winning applicants
-            </div>
-            <div class="feedback-data-content">Imrpoved by 8%</div>
-          </div>
-        </div>
-      </div>
-      <div class="data-feedback">
-        <div class="feedback-index">
-          <img
-            width="200px"
-            src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/review-rate.png"
-          />
-          <div class="feedback-title"></div>
-        </div>
-        <div class="feedback-datas">
-          <div class="feedback-data">
-            <div class="feedback-data-title">
-              Review rate of experienced customers
-            </div>
-            <div class="feedback-data-content">Raise from 60% to 80%</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="heading2">Stakeholders' feedback</div>
-      <div class="heading3">Customer</div>
-      <div class="user">
-        <div class="user-profile">
-          <div class="user-profile-name">
-            <img
-              style="width: 75px"
-              src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/customer1.jpg"
-            />
-            <div>Wu Huang</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Age</div>
-            <div class="user-profile-value">32</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">User name</div>
-            <div class="user-profile-value">哈哈小公主</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Gender</div>
-            <div class="user-profile-value">Female</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Occupation</div>
-            <div class="user-profile-value">Teacher</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Interests</div>
-            <div class="user-profile-value">Makeup, Skincare, Massage</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">App usage time</div>
-            <div class="user-profile-value">4 Years</div>
-          </div>
-        </div>
-        <div class="user-perspective">
-          <div class="user-likes">
-            <div class="user-likes-title">Likes</div>
-            <div class="text2">
-              <li>
-                I feel a sense of more opportunities to win the free trial after
-                I see the new browse page
-              </li>
-              <li>
-                Now I can reserve and change my arrival date, If I reserve in
-                advance I think I will be more responsible to experience the
-                event
-              </li>
-              <li>I can get to know the whole process clearly when I apply</li>
-              <li>I can get some credits after I review the experience</li>
-              <li>
-                I receive more notifications than before after I win the free
-                trial, this may sometimes be annoying, but in end, it can guide
-                me to arrive
-              </li>
-            </div>
-          </div>
-          <div class="user-pain">
-            <div class="user-likes-title">Advices</div>
-            <div class="text2">
-              <li>
-                I feel like I am forced to experience all the process because of
-                the added punishment, this can make me a little restricted
-              </li>
-              <li>Some advertisements from merchants are a little annoyed</li>
-              <li>
-                I think I am more cautious when I apply because there are more
-                restrictions
-              </li>
-              <div class="user-comment"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="heading3">Merchant</div>
-      <div class="user">
-        <div class="user-profile">
-          <div class="user-profile-name">
-            <img
-              style="width: 75px"
-              src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/merchant1.png"
-            />
-            <div>Tracy Chen</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Age</div>
-            <div class="user-profile-value">34</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Gender</div>
-            <div class="user-profile-value">Female</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Industry</div>
-            <div class="user-profile-value">Manicure</div>
           </div>
 
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Staff</div>
-            <div class="user-profile-value">8</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Establishing time</div>
-            <div class="user-profile-value">2 Years</div>
-          </div>
-        </div>
-        <div class="user-perspective">
-          <div class="user-likes">
-            <div class="user-likes-title">Likes</div>
-            <div class="text2">
-              <li>
-                I can have the ability to filter more high-quality customers to
-                my winning list, I think they can bring me more values
-              </li>
-              <li>
-                Now through the function of the waitlist I can make sure I can
-                utilize all my winning amount
-              </li>
-              <li>
-                I can send notifications in different phases now, this gives me
-                the freedom to customize the customer’s experience. I have a
-                sense of control over this activity
-              </li>
-              <li>
-                I can manage the reviews and customers after they have
-                experienced, they are valuable resources to me.
-              </li>
-              <li>
-                Overall, the arriving rate and review rate are actually improved
-                after these updates, I think I have more confidence to operate
-                this activity
-              </li>
+          <div class="heading2">Stakeholders' feedback</div>
+          <div class="heading3">Customer</div>
+          <div class="user">
+            <div class="user-profile">
+              <div class="user-profile-name">
+                <img
+                  style="width: 75px"
+                  src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/customer1.jpg"
+                />
+                <div>Wu Huang</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Age</div>
+                <div class="user-profile-value">32</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">User name</div>
+                <div class="user-profile-value">哈哈小公主</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Gender</div>
+                <div class="user-profile-value">Female</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Occupation</div>
+                <div class="user-profile-value">Teacher</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Interests</div>
+                <div class="user-profile-value">Makeup, Skincare, Massage</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">App usage time</div>
+                <div class="user-profile-value">4 Years</div>
+              </div>
+            </div>
+            <div class="user-perspective">
+              <div class="user-likes">
+                <div class="user-likes-title">Likes</div>
+                <div class="text2">
+                  <li>
+                    I feel a sense of more opportunities to win the free trial
+                    after I see the new browse page
+                  </li>
+                  <li>
+                    Now I can reserve and change my arrival date, If I reserve
+                    in advance I think I will be more responsible to experience
+                    the event
+                  </li>
+                  <li>
+                    I can get to know the whole process clearly when I apply
+                  </li>
+                  <li>I can get some credits after I review the experience</li>
+                  <li>
+                    I receive more notifications than before after I win the
+                    free trial, this may sometimes be annoying, but in end, it
+                    can guide me to arrive
+                  </li>
+                </div>
+              </div>
+              <div class="user-pain">
+                <div class="user-likes-title">Advices</div>
+                <div class="text2">
+                  <li>
+                    I feel like I am forced to experience all the process
+                    because of the added punishment, this can make me a little
+                    restricted
+                  </li>
+                  <li>
+                    Some advertisements from merchants are a little annoyed
+                  </li>
+                  <li>
+                    I think I am more cautious when I apply because there are
+                    more restrictions
+                  </li>
+                  <div class="user-comment"></div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="user-pain">
-            <div class="user-likes-title">Advices</div>
-            <div class="text2">
-              <li>
-                I think we can discuss the participation fee again in this new
-                version
-              </li>
-              <li>
-                I want this activity can be promoted to more channels in
-                Meituan, this can make our service more exposed to customers
-              </li>
-              <div class="user-comment"></div>
+          <div class="heading3">Merchant</div>
+          <div class="user">
+            <div class="user-profile">
+              <div class="user-profile-name">
+                <img
+                  style="width: 75px"
+                  src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/freetrial/merchant1.png"
+                />
+                <div>Tracy Chen</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Age</div>
+                <div class="user-profile-value">34</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Gender</div>
+                <div class="user-profile-value">Female</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Industry</div>
+                <div class="user-profile-value">Manicure</div>
+              </div>
+
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Staff</div>
+                <div class="user-profile-value">8</div>
+              </div>
+              <div class="user-profile-horizontal">
+                <div class="user-profile-key">Establishing time</div>
+                <div class="user-profile-value">2 Years</div>
+              </div>
+            </div>
+            <div class="user-perspective">
+              <div class="user-likes">
+                <div class="user-likes-title">Likes</div>
+                <div class="text2">
+                  <li>
+                    I can have the ability to filter more high-quality customers
+                    to my winning list, I think they can bring me more values
+                  </li>
+                  <li>
+                    Now through the function of the waitlist I can make sure I
+                    can utilize all my winning amount
+                  </li>
+                  <li>
+                    I can send notifications in different phases now, this gives
+                    me the freedom to customize the customer’s experience. I
+                    have a sense of control over this activity
+                  </li>
+                  <li>
+                    I can manage the reviews and customers after they have
+                    experienced, they are valuable resources to me.
+                  </li>
+                  <li>
+                    Overall, the arriving rate and review rate are actually
+                    improved after these updates, I think I have more confidence
+                    to operate this activity
+                  </li>
+                </div>
+              </div>
+              <div class="user-pain">
+                <div class="user-likes-title">Advices</div>
+                <div class="text2">
+                  <li>
+                    I think we can discuss the participation fee again in this
+                    new version
+                  </li>
+                  <li>
+                    I want this activity can be promoted to more channels in
+                    Meituan, this can make our service more exposed to customers
+                  </li>
+                  <div class="user-comment"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="block">
-      <div class="top-bar work-length">
-        <div class="title">Reflection</div>
-        <div class="bar-divide"></div>
-      </div>
-      <div class="heading2">
-        Open our mind try different forms of free trial
-      </div>
-      <div class="text2">
-        The essence of free trial is to enable merchants to promote their
-        services to interested people, we can embed these services in other
-        forms of Meituan, so that high quality users can receive them first,
-        which can more accurately match the people who are willing to
-        participate and free activities. So the forms can conlude the following:
-        <li>Coupon</li>
-        <li>Offer</li>
-        <li>Reward</li>
-        <li>Gift</li>
-        <li>...</li>
-      </div>
-    </div>
-    <div class="block">
-      <div class="contact">
-        <!-- <div class="top-bar">
+        <div class="block">
+          <div class="top-bar work-length">
+            <div class="title">Reflection</div>
+            <div class="bar-divide"></div>
+          </div>
+          <div class="heading2">
+            Open our mind try different forms of free trial
+          </div>
+          <div class="text2">
+            The essence of free trial is to enable merchants to promote their
+            services to interested people, we can embed these services in other
+            forms of Meituan, so that high quality users can receive them first,
+            which can more accurately match the people who are willing to
+            participate and free activities. So the forms can conlude the
+            following:
+            <li>Coupon</li>
+            <li>Offer</li>
+            <li>Reward</li>
+            <li>Gift</li>
+            <li>...</li>
+          </div>
+        </div>
+        <div class="block">
+          <div class="contact">
+            <!-- <div class="top-bar">
           <div class="title">Contact me</div>
           <div class="bar-divide"></div>
         </div> -->
-        <div class="contact-content">
-          <span>
-            Thanks for reading
+            <div class="contact-content">
+              <span>
+                Thanks for reading
 
-            <span style="color: #d90404; margin-left: 8px"> !</span>
-          </span>
-        </div>
-        <div class="contact-lead">
-          <div @click="openKeep" class="contact-lead-left">Prev</div>
-          <div @click="openHeimdall" class="contact-lead-right">Next</div>
+                <span style="color: #d90404; margin-left: 8px"> !</span>
+              </span>
+            </div>
+            <div class="contact-lead">
+              <div @click="openKeep" class="contact-lead-left">Prev</div>
+              <div @click="openHeimdall" class="contact-lead-right">Next</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1624,6 +1672,14 @@ export default {
 </script>
 
 <style scoped>
+/* body layout */
+.body-content {
+  width: 100%;
+  display: flex;
+}
+.body-right {
+  flex: 1;
+}
 /* phase */
 .phase-solutions::before {
   content: "Solutions:";
@@ -2061,11 +2117,12 @@ li {
 .title-zone {
   background-color: white;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.105);
-  padding: 16px;
+  padding: 24px;
   width: 60%;
   margin-left: 10%;
   margin-top: -36px;
   text-align: left;
+  border-radius: 16px;
 }
 .cover {
   background-color: #e6a23c;
@@ -2329,9 +2386,9 @@ a:active {
   padding: 20px 0;
 }
 .home {
-  width: max(896px, 65%);
+  width: max(896px, 90%);
   margin: 0 auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .goal {
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.237);

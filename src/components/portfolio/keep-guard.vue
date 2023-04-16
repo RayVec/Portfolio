@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <navigation />
+    <!-- <navigation /> -->
     <div class="block">
       <div class="cover">
         <img
@@ -42,384 +42,904 @@
         </div>
       </div>
     </div>
-    <div class="block">
-      <div class="top-bar work-length">
-        <div class="title">Background</div>
-        <div class="bar-divide"></div>
-      </div>
-      <div class="heading2">Company’s challenges</div>
-      <div class="text2 layout2">
-        <div class="card1">
-          <div class="card1-show">
-            <img
-              src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/team-resource.png"
-            />
-            <div class="color1">Keep's community strategy</div>
-            <div>-></div>
+    <div class="body-content">
+      <navigation />
+
+      <div class="body-right">
+        <div class="block">
+          <div class="top-bar work-length">
+            <div class="title">Background</div>
+            <div class="bar-divide"></div>
           </div>
-          <div class="card1-shadow">
-            Keep invested main resources including engineering team, operation
-            team and AI team to community service, this service should have the
-            ability to generate and broadcast high-value content in order to
-            create new profit growth points
+          <div class="heading2">Company’s challenges</div>
+          <div class="text2 layout2">
+            <div class="card1">
+              <div class="card1-show">
+                <img
+                  src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/team-resource.png"
+                />
+                <div class="color1">Keep's community strategy</div>
+                <div>-></div>
+              </div>
+              <div class="card1-shadow">
+                Keep invested main resources including engineering team,
+                operation team and AI team to community service, this service
+                should have the ability to generate and broadcast high-value
+                content in order to create new profit growth points
+              </div>
+            </div>
+            <div class="card1">
+              <div class="card1-show">
+                <img
+                  src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/content-quality.png"
+                />
+                <div class="color1">Low content quality</div>
+                <div>-></div>
+              </div>
+              <div class="card1-shadow">
+                Existing community management framework can’t satisfy growing
+                phone call complaint about spam content and government’s rules
+                of Internet governance
+              </div>
+            </div>
+            <div class="card1">
+              <div class="card1-show">
+                <img
+                  src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/system-capacity.png"
+                />
+                <div class="color1">Insufficient system capacity</div>
+                <div>-></div>
+              </div>
+              <div class="card1-shadow">
+                Review and other subsystems are scattered and not so efficient,
+                which is a waste of human resources and can not support the
+                future business
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="card1">
-          <div class="card1-show">
-            <img
-              src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/content-quality.png"
-            />
-            <div class="color1">Low content quality</div>
-            <div>-></div>
-          </div>
-          <div class="card1-shadow">
-            Existing community management framework can’t satisfy growing phone
-            call complaint about spam content and government’s rules of Internet
-            governance
-          </div>
-        </div>
-        <div class="card1">
-          <div class="card1-show">
-            <img
-              src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/system-capacity.png"
-            />
-            <div class="color1">Insufficient system capacity</div>
-            <div>-></div>
-          </div>
-          <div class="card1-shadow">
-            Review and other subsystems are scattered and not so efficient,
-            which is a waste of human resources and can not support the future
-            business
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="heading2">What is Keep Guard</div>
-        <div class="text2 layout2">
-          <img
-            class="what-is-img"
-            src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/what-is/content.png"
-          />
-          <div class="what-is-line">
-            <div class="what-is-dot dot-animation-left"></div>
-            <div class="what-is-process">Created by users</div>
-            <div class="what-is-line-line"></div>
-          </div>
-          <div class="flip what-is-img">
-            <div class="flip-front">
+          <div>
+            <div class="heading2">What is Keep Guard</div>
+            <div class="text2 layout2">
               <img
                 class="what-is-img"
-                src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/what-is/keep-guard.png"
+                src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/what-is/content.png"
+              />
+              <div class="what-is-line">
+                <div class="what-is-dot dot-animation-left"></div>
+                <div class="what-is-process">Created by users</div>
+                <div class="what-is-line-line"></div>
+              </div>
+              <div class="flip what-is-img">
+                <div class="flip-front">
+                  <img
+                    class="what-is-img"
+                    src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/what-is/keep-guard.png"
+                  />
+                </div>
+                <div class="flip-back">
+                  <el-popover placement="bottom-start" trigger="hover">
+                    <div style="width: 40vw" class="text2">
+                      A supportive community management system that is on the
+                      back end of the Keep community service, which includes
+                      mobile app’s portals like report, status management and
+                      official messages, an operating web system, and community
+                      strategy team making rules
+                    </div>
+                    <img
+                      slot="reference"
+                      class="what-is-img"
+                      src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/what-is/keep-guard-back.png"
+                    />
+                  </el-popover>
+                </div>
+              </div>
+              <div class="what-is-line">
+                <div class="what-is-dot dot-animation-right"></div>
+                <div class="what-is-process">Screened</div>
+                <div class="what-is-line-line"></div>
+              </div>
+              <img
+                class="what-is-img"
+                src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/what-is/community.png"
               />
             </div>
-            <div class="flip-back">
-              <el-popover placement="bottom-start" trigger="hover">
-                <div style="width: 40vw" class="text2">
-                  A supportive community management system that is on the back
-                  end of the Keep community service, which includes mobile app’s
-                  portals like report, status management and official messages,
-                  an operating web system, and community strategy team making
-                  rules
-                </div>
-                <img
-                  slot="reference"
-                  class="what-is-img"
-                  src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/what-is/keep-guard-back.png"
-                />
-              </el-popover>
-            </div>
-          </div>
-          <div class="what-is-line">
-            <div class="what-is-dot dot-animation-right"></div>
-            <div class="what-is-process">Screened</div>
-            <div class="what-is-line-line"></div>
-          </div>
-          <img
-            class="what-is-img"
-            src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/what-is/community.png"
-          />
-        </div>
-        <!-- <div class="text2">
+            <!-- <div class="text2">
           A supportive community management system that is on the back end of
           the Keep community service, which includes the main operating web
           system, community management strategy and mobile app’s portals like
           complaint, status management and official messages.
         </div> -->
-        <!-- <img
+            <!-- <img
           style="width: 250px"
           src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/what-is.png"
         /> -->
-      </div>
-      <div class="heading2">Teams</div>
-      <div class="heading3">My team</div>
-      <div class="text2">
-        1 senior product manager, 1 product designer & product associate (me), 2
-        back-end engineers, 2 front-end engineers
-      </div>
-      <div class="heading3">Cross-functional team</div>
-      <div class="text2">
-        Review team, Label team, Content operation team, AI team, Community
-        product team, Legal team
-      </div>
-      <div class="heading2">Timeline</div>
-      <div class="text2">
-        <img
-          style="width: 100%"
-          src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/timeline.png"
-        />
-        <!-- <li>Define the goal</li>
+          </div>
+          <div class="heading2">Teams</div>
+          <div class="heading3">My team</div>
+          <div class="text2">
+            1 senior product manager, 1 product designer & product associate
+            (me), 2 back-end engineers, 2 front-end engineers
+          </div>
+          <div class="heading3">Cross-functional team</div>
+          <div class="text2">
+            Review team, Label team, Content operation team, AI team, Community
+            product team, Legal team
+          </div>
+          <div class="heading2">Timeline</div>
+          <div class="text2">
+            <img
+              style="width: 100%"
+              src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/timeline.png"
+            />
+            <!-- <li>Define the goal</li>
         <li>Stakeholder research & Gather requirements</li>
         <li>Ideation & Build information architecture</li>
         <li>Prototype</li>
         <li>critique & User testing & Iteration</li>
         <li>Data feedback & Evaluation</li> -->
-      </div>
-    </div>
-    <div class="block">
-      <div class="top-bar work-length">
-        <div class="title">Design process</div>
-        <div class="bar-divide"></div>
-      </div>
-      <div class="heading2">Goal definition</div>
-      <div class="text2">
-        We started from the original 3 challenges to analyze the back reasons
-        and HMWs
-      </div>
-      <div>
-        <div class="text2 goals">
-          <div class="goal">
-            <img
-              src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/goal/question.svg"
-            />
-            <div>How to generate and broadcast high-value content</div>
-          </div>
-          <div class="what-is-line">
-            <div class="what-is-line-line"></div>
-          </div>
-          <div class="goal">
-            <img
-              src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/goal/brain.svg"
-            />
-            <div>
-              Filter high-quality information & build recommendation system
-            </div>
-          </div>
-          <div class="what-is-line">
-            <div class="what-is-line-line"></div>
-          </div>
-          <div class="goal">
-            <img
-              src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/goal/target.svg"
-            />
-            <div>
-              HMW build labeling system to support content classification
-            </div>
           </div>
         </div>
-        <div class="text2 goals">
-          <div class="goal">
-            <img
-              src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/goal/question.svg"
-            />
-            <div>
-              Reduce phone complaints and risks of government regulation
-            </div>
+        <div class="block">
+          <div class="top-bar work-length">
+            <div class="title">Design process</div>
+            <div class="bar-divide"></div>
           </div>
-          <div class="what-is-line">
-            <div class="what-is-line-line"></div>
+          <div class="heading2">Goal definition</div>
+          <div class="text2">
+            We started from the original 3 challenges to analyze the back
+            reasons and HMWs
           </div>
-          <div class="goal">
-            <img
-              src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/goal/brain.svg"
-            />
-            <div>Reduce spam information</div>
-          </div>
-          <div class="what-is-line">
-            <div class="what-is-line-line"></div>
-          </div>
-          <div class="goal">
-            <img
-              src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/goal/target.svg"
-            />
-            <div>HMW expand the reviewing scope and governance method</div>
-          </div>
-        </div>
-        <div class="text2 goals">
-          <div class="goal">
-            <img
-              src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/goal/question.svg"
-            />
-            <div>How to improve manual efficiency</div>
-          </div>
-          <div class="what-is-line">
-            <div class="what-is-line-line"></div>
-          </div>
-          <div class="goal">
-            <img
-              src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/goal/brain.svg"
-            />
-            <div>
-              Find users’ pain points and explore other technological ways
-            </div>
-          </div>
-          <div class="what-is-line">
-            <div class="what-is-line-line"></div>
-          </div>
-          <div class="goal">
-            <img
-              src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/goal/target.svg"
-            />
-            <div>
-              HMW rebuild a unified and user-centered web operating system with
-              AI assistance
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="heading2">Stakeholder research</div>
-      <div class="heading3">Who are stakeholders</div>
-      <div class="text2 layout2">
-        <div class="stakeholder">
-          <div class="stakeholder-title">Keep’s users</div>
-          <div class="stakeholder-intro">
-            Who are sensitive to the content quality
-          </div>
-          <img
-            class="stakeholder-background"
-            src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/stakeholder/user.svg"
-          />
-        </div>
-        <div class="stakeholder">
-          <div class="stakeholder-title">Review & Label team</div>
-
-          <div class="stakeholder-intro">
-            Who are responsible for the review and labeling operation
-          </div>
-          <img
-            class="stakeholder-background"
-            src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/stakeholder/team.svg"
-          />
-        </div>
-        <div class="stakeholder">
-          <div class="stakeholder-title">Content operation team</div>
-          <div class="stakeholder-intro">
-            Who make
-            <el-popover placement="top-start" trigger="hover">
-              <div
-                style="
-                  width: 30vw;
-                  font-size: 16px;
-                  font-family: 'Poppins', sans-serif;
-                "
-              >
-                Content recommendation, hot topics, KOL management, operate
-                official channel
-              </div>
-              <a style="text-decoration: underline" slot="reference"
-                >strategies</a
-              >
-            </el-popover>
-            for the content filter
-          </div>
-          <img
-            class="stakeholder-background"
-            src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/stakeholder/team.svg"
-          />
-        </div>
-        <div class="stakeholder">
-          <div class="stakeholder-title">Manager</div>
-          <div class="stakeholder-intro">
-            Who are concerned about the whole ROI of Keep Guard
-          </div>
-          <img
-            class="stakeholder-background"
-            src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/stakeholder/manager.svg"
-          />
-        </div>
-      </div>
-      <div class="heading3">Interviews</div>
-      <el-tabs>
-        <el-tab-pane label="Keep's user"
-          ><div class="user">
-            <div class="user-profile">
-              <div class="user-profile-name">
+          <div>
+            <div class="text2 goals">
+              <div class="goal">
                 <img
-                  style="width: 75px"
-                  src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/wanghuahua-photo.png"
+                  src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/goal/question.svg"
                 />
-                <div>Huahua Wang</div>
+                <div>How to generate and broadcast high-value content</div>
               </div>
-              <div class="user-profile-horizontal">
-                <div class="user-profile-key">Age</div>
-                <div class="user-profile-value">28</div>
+              <div class="what-is-line">
+                <div class="what-is-line-line"></div>
               </div>
-              <div class="user-profile-horizontal">
-                <div class="user-profile-key">Occupation</div>
-                <div class="user-profile-value">fitness coach</div>
-              </div>
-              <div class="user-profile-horizontal">
-                <div class="user-profile-key">App usage time</div>
-                <div class="user-profile-value">3 years</div>
-              </div>
-              <div class="user-profile-vertical">
-                <div class="user-profile-key">Usage habit</div>
-                <div class="user-profile-value">
-                  Likes to visit the posts of community after exercising for a
-                  long time
+              <div class="goal">
+                <img
+                  src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/goal/brain.svg"
+                />
+                <div>
+                  Filter high-quality information & build recommendation system
                 </div>
               </div>
-              <div class="user-profile-horizontal">
-                <div class="user-profile-key">App user name</div>
-                <div class="user-profile-value">寳寳磨了魔牙</div>
+              <div class="what-is-line">
+                <div class="what-is-line-line"></div>
+              </div>
+              <div class="goal">
+                <img
+                  src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/goal/target.svg"
+                />
+                <div>
+                  HMW build labeling system to support content classification
+                </div>
               </div>
             </div>
-            <div class="user-perspective">
-              <div class="user-likes">
-                <div class="user-likes-title">Likes</div>
-                <div class="text2">
-                  <li>
-                    Keep’s content can give me chance to share my personal
-                    perspective about fitness, which adds a channel for me to
-                    build more and more impact on social media in on specific
-                    and professional field.
-                  </li>
+            <div class="text2 goals">
+              <div class="goal">
+                <img
+                  src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/goal/question.svg"
+                />
+                <div>
+                  Reduce phone complaints and risks of government regulation
                 </div>
               </div>
-              <div class="user-pain">
-                <div class="user-likes-title">Pain points</div>
-                <div class="text2">
-                  <li>
-                    I sometimes find content that contains harmful words or
-                    images, but can’t find a way immediately to complain about
-                    it, finally decide to call keep care center for complaint
-                  </li>
-                  <li>
-                    Some contents have images that may contain some implication
-                    of porn, but because it is about fitness, so I don’t know
-                    how to identify them
-                  </li>
-                  <div class="user-comment">
-                    “ I just hate these contents that have harmful implication,
-                    which may destory the community I love ”
+              <div class="what-is-line">
+                <div class="what-is-line-line"></div>
+              </div>
+              <div class="goal">
+                <img
+                  src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/goal/brain.svg"
+                />
+                <div>Reduce spam information</div>
+              </div>
+              <div class="what-is-line">
+                <div class="what-is-line-line"></div>
+              </div>
+              <div class="goal">
+                <img
+                  src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/goal/target.svg"
+                />
+                <div>HMW expand the reviewing scope and governance method</div>
+              </div>
+            </div>
+            <div class="text2 goals">
+              <div class="goal">
+                <img
+                  src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/goal/question.svg"
+                />
+                <div>How to improve manual efficiency</div>
+              </div>
+              <div class="what-is-line">
+                <div class="what-is-line-line"></div>
+              </div>
+              <div class="goal">
+                <img
+                  src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/goal/brain.svg"
+                />
+                <div>
+                  Find users’ pain points and explore other technological ways
+                </div>
+              </div>
+              <div class="what-is-line">
+                <div class="what-is-line-line"></div>
+              </div>
+              <div class="goal">
+                <img
+                  src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/goal/target.svg"
+                />
+                <div>
+                  HMW rebuild a unified and user-centered web operating system
+                  with AI assistance
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="heading2">Stakeholder research</div>
+          <div class="heading3">Who are stakeholders</div>
+          <div class="text2 layout2">
+            <div class="stakeholder">
+              <div class="stakeholder-title">Keep’s users</div>
+              <div class="stakeholder-intro">
+                Who are sensitive to the content quality
+              </div>
+              <img
+                class="stakeholder-background"
+                src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/stakeholder/user.svg"
+              />
+            </div>
+            <div class="stakeholder">
+              <div class="stakeholder-title">Review & Label team</div>
+
+              <div class="stakeholder-intro">
+                Who are responsible for the review and labeling operation
+              </div>
+              <img
+                class="stakeholder-background"
+                src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/stakeholder/team.svg"
+              />
+            </div>
+            <div class="stakeholder">
+              <div class="stakeholder-title">Content operation team</div>
+              <div class="stakeholder-intro">
+                Who make
+                <el-popover placement="top-start" trigger="hover">
+                  <div
+                    style="
+                      width: 30vw;
+                      font-size: 16px;
+                      font-family: 'Poppins', sans-serif;
+                    "
+                  >
+                    Content recommendation, hot topics, KOL management, operate
+                    official channel
+                  </div>
+                  <a style="text-decoration: underline" slot="reference"
+                    >strategies</a
+                  >
+                </el-popover>
+                for the content filter
+              </div>
+              <img
+                class="stakeholder-background"
+                src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/stakeholder/team.svg"
+              />
+            </div>
+            <div class="stakeholder">
+              <div class="stakeholder-title">Manager</div>
+              <div class="stakeholder-intro">
+                Who are concerned about the whole ROI of Keep Guard
+              </div>
+              <img
+                class="stakeholder-background"
+                src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/stakeholder/manager.svg"
+              />
+            </div>
+          </div>
+          <div class="heading3">Interviews</div>
+          <el-tabs>
+            <el-tab-pane label="Keep's user"
+              ><div class="user">
+                <div class="user-profile">
+                  <div class="user-profile-name">
+                    <img
+                      style="width: 75px"
+                      src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/wanghuahua-photo.png"
+                    />
+                    <div>Huahua Wang</div>
+                  </div>
+                  <div class="user-profile-horizontal">
+                    <div class="user-profile-key">Age</div>
+                    <div class="user-profile-value">28</div>
+                  </div>
+                  <div class="user-profile-horizontal">
+                    <div class="user-profile-key">Occupation</div>
+                    <div class="user-profile-value">fitness coach</div>
+                  </div>
+                  <div class="user-profile-horizontal">
+                    <div class="user-profile-key">App usage time</div>
+                    <div class="user-profile-value">3 years</div>
+                  </div>
+                  <div class="user-profile-vertical">
+                    <div class="user-profile-key">Usage habit</div>
+                    <div class="user-profile-value">
+                      Likes to visit the posts of community after exercising for
+                      a long time
+                    </div>
+                  </div>
+                  <div class="user-profile-horizontal">
+                    <div class="user-profile-key">App user name</div>
+                    <div class="user-profile-value">寳寳磨了魔牙</div>
                   </div>
                 </div>
+                <div class="user-perspective">
+                  <div class="user-likes">
+                    <div class="user-likes-title">Likes</div>
+                    <div class="text2">
+                      <li>
+                        Keep’s content can give me chance to share my personal
+                        perspective about fitness, which adds a channel for me
+                        to build more and more impact on social media in on
+                        specific and professional field.
+                      </li>
+                    </div>
+                  </div>
+                  <div class="user-pain">
+                    <div class="user-likes-title">Pain points</div>
+                    <div class="text2">
+                      <li>
+                        I sometimes find content that contains harmful words or
+                        images, but can’t find a way immediately to complain
+                        about it, finally decide to call keep care center for
+                        complaint
+                      </li>
+                      <li>
+                        Some contents have images that may contain some
+                        implication of porn, but because it is about fitness, so
+                        I don’t know how to identify them
+                      </li>
+                      <div class="user-comment">
+                        “ I just hate these contents that have harmful
+                        implication, which may destory the community I love ”
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div></el-tab-pane
+            >
+            <el-tab-pane label="Review team & Label team"
+              ><div class="user">
+                <div class="user-profile">
+                  <div class="user-profile-name">
+                    <img
+                      style="width: 75px; border-radius: 37.5px"
+                      src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/wameng-photo.jpeg"
+                    />
+                    <div>
+                      <div>Wa Meng</div>
+                      <div class="user-linkedin">
+                        <a
+                          href="https://www.linkedin.com/in/wameng/"
+                          target="_blank"
+                        >
+                          <img
+                            width="20px"
+                            src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/linkedin.png"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user-profile-horizontal">
+                    <div class="user-profile-key">Age</div>
+                    <div class="user-profile-value">30</div>
+                  </div>
+                  <div class="user-profile-horizontal">
+                    <div class="user-profile-key">Occupation</div>
+                    <div class="user-profile-value">
+                      Keep's content reviewer
+                    </div>
+                  </div>
+                  <div class="user-profile-horizontal">
+                    <div class="user-profile-key">Working time</div>
+                    <div class="user-profile-value">2 years</div>
+                  </div>
+                  <div class="user-profile-vertical">
+                    <div class="user-profile-key">Duty</div>
+                    <div class="user-profile-value">
+                      Review every data created by users, the more I review, the
+                      greater opportunity I can get high performance for reward
+                    </div>
+                  </div>
+                  <!-- <div class="user-profile-horizontal">
+            <div class="user-profile-key">App user name</div>
+            <div class="user-profile-value">寳寳磨了魔牙</div>
+          </div> -->
+                </div>
+                <div class="user-perspective">
+                  <div class="user-likes">
+                    <div class="user-likes-title">Likes</div>
+                    <div class="text2">
+                      <li>
+                        Keep has put more resources to rebuild content
+                        management, which means I have more opportunity to get
+                        high performance, and it is also a important period to
+                        exercise my ability
+                      </li>
+                    </div>
+                  </div>
+                  <div class="user-pain">
+                    <div class="user-likes-title">Pain points</div>
+                    <div class="text2">
+                      <li>
+                        We do not have a clear target in every day work, thus
+                        cause the slack and we can't review enough content to
+                        ensure the content quality
+                      </li>
+                      <li>
+                        Sometimes we need to work for a long time to make up for
+                        the previous lack of work
+                      </li>
+                      <li>
+                        I do not think I can get enough information from the web
+                        interface to make efficient judgement
+                      </li>
+                      <div class="user-comment">
+                        “ Although we have motivation, but the review structure
+                        and system is far away from maturity ”
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div></el-tab-pane
+            >
+            <el-tab-pane label="Content operation team"
+              ><div class="user">
+                <div class="user-profile">
+                  <div class="user-profile-name">
+                    <img
+                      style="width: 75px; border-radius: 37.5px"
+                      src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/jizhang-photo.jpeg"
+                    />
+                    <div>
+                      <div>Ji Zhang</div>
+                      <div class="user-linkedin">
+                        <a
+                          href="https://maimai.cn/contact/share/card?u=2lqd3iv6s9vpl&_share_channel=copy_link"
+                          target="_blank"
+                        >
+                          <img
+                            width="20px"
+                            src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/linkedin.png"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user-profile-horizontal">
+                    <div class="user-profile-key">Age</div>
+                    <div class="user-profile-value">29</div>
+                  </div>
+                  <div class="user-profile-horizontal">
+                    <div class="user-profile-key">Occupation</div>
+                    <div class="user-profile-value">
+                      Keep's content operation
+                    </div>
+                  </div>
+                  <div class="user-profile-horizontal">
+                    <div class="user-profile-key">Working time</div>
+                    <div class="user-profile-value">1 year</div>
+                  </div>
+                  <div class="user-profile-vertical">
+                    <div class="user-profile-key">Duty</div>
+                    <div class="user-profile-value">
+                      Manage content quality and lead hot topics
+                    </div>
+                  </div>
+                  <!-- <div class="user-profile-horizontal">
+            <div class="user-profile-key">App user name</div>
+            <div class="user-profile-value">寳寳磨了魔牙</div>
+          </div> -->
+                </div>
+                <div class="user-perspective">
+                  <div class="user-likes">
+                    <div class="user-likes-title">Likes</div>
+                    <div class="text2">
+                      <li>
+                        Content operation is building a structure for the new
+                        criteria of the content quality, I feel a sense of
+                        mission to participate in this challenging work
+                      </li>
+                    </div>
+                  </div>
+                  <div class="user-pain">
+                    <div class="user-likes-title">Pain points</div>
+                    <div class="text2">
+                      <li>
+                        Sometimes I find some harmful content and want to hide
+                        it, I need to contact engineering team to deal with it,
+                        so I want a more efficient way for me to manage content
+                      </li>
+                      <div class="user-comment">
+                        “ Everything needs to be considered from the beginning ”
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div></el-tab-pane
+            >
+            <el-tab-pane label="Manager"
+              ><div class="user">
+                <div class="user-profile">
+                  <div class="user-profile-name">
+                    <img
+                      style="width: 75px; border-radius: 37.5px"
+                      src="https://res.cloudinary.com/crunchbase-production/image/upload/c_thumb,h_170,w_170,f_auto,g_faces,z_0.7,b_white,q_auto:eco,dpr_1/mycjxyaaux7dhdpwoi3c"
+                    />
+                    <div>
+                      <div>Wei Peng</div>
+                      <div class="user-linkedin">
+                        <a
+                          href="https://www.linkedin.com/in/pacinoson/"
+                          target="_blank"
+                        >
+                          <img
+                            width="20px"
+                            src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/linkedin.png"
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="user-profile-horizontal">
+                    <div class="user-profile-key">Age</div>
+                    <div class="user-profile-value">35</div>
+                  </div>
+                  <div class="user-profile-horizontal">
+                    <div class="user-profile-key">Occupation</div>
+                    <div class="user-profile-value">
+                      Keep's cofounder and manager
+                    </div>
+                  </div>
+                  <div class="user-profile-horizontal">
+                    <div class="user-profile-key">Working time</div>
+                    <div class="user-profile-value">8 years</div>
+                  </div>
+                  <div class="user-profile-vertical">
+                    <div class="user-profile-key">Duty</div>
+                    <div class="user-profile-value">
+                      Manage all the business operation including community
+                      management
+                    </div>
+                  </div>
+                  <!-- <div class="user-profile-horizontal">
+            <div class="user-profile-key">App user name</div>
+            <div class="user-profile-value">寳寳磨了魔牙</div>
+          </div> -->
+                </div>
+                <div class="user-perspective">
+                  <div class="user-likes">
+                    <div class="user-likes-title">Likes</div>
+                    <div class="text2">
+                      <li>
+                        There is nothing I really likes about the current
+                        situation
+                      </li>
+                    </div>
+                  </div>
+                  <div class="user-pain">
+                    <div class="user-likes-title">Pain points</div>
+                    <div class="text2">
+                      <li>
+                        I want to monitor the efficiency of reviewing, labeling
+                        in order to know whether the human resource is enough
+                        and adjust the performance of every staff
+                      </li>
+                      <li>
+                        I also want to know whether community service’s content
+                        is healthy overall
+                      </li>
+                      <div class="user-comment">
+                        “ I want to build a liable and reputable community for
+                        people who love fitness ”
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div></el-tab-pane
+            >
+          </el-tabs>
+
+          <!-- <div class="text2">
+        <img
+          style="width: 100%"
+          src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/user-wanghuahua.png"
+        />
+      </div> -->
+
+          <div class="heading2">Requirement confirmation</div>
+          <div class="text2">
+            According to goal definition and stakeholder research, we could draw
+            the following requirements
+          </div>
+          <div class="heading3">Mobile side - Keep APP</div>
+          <div class="text2">
+            <div class="requirement">Complaint report</div>
+            <div class="requirement">User feedback portal</div>
+          </div>
+          <div class="heading3">Web side - Keep Guard web system</div>
+          <div class="text2 layout2">
+            <div class="requirements">
+              <div class="requirements-title">
+                <i class="el-icon-tickets"></i>Review
+              </div>
+              <div class="requirement">Migrate from the old system</div>
+              <div class="requirement">Add AI to improve efficiency</div>
+              <div class="requirement">
+                Rebuild the review interface to improve efficiency, inluding
+                sense of purpose, balanced work and assisted information
+              </div>
+              <div class="requirement">
+                Expand the reviewing scope to all types of content
               </div>
             </div>
-          </div></el-tab-pane
-        >
-        <el-tab-pane label="Review team & Label team"
-          ><div class="user">
+            <div class="requirements">
+              <div class="requirements-title">
+                <i class="el-icon-tickets"></i>Label function
+              </div>
+              <div class="requirement">Label editing function</div>
+              <div class="requirement">Labeling operation workspace</div>
+              <div class="requirement">
+                Connect labeled content to recommendation system
+              </div>
+            </div>
+            <div class="requirements">
+              <div class="requirements-title">
+                <i class="el-icon-tickets"></i>Community management
+              </div>
+              <div class="requirement">Complaint management</div>
+            </div>
+            <div class="requirements">
+              <div class="requirements-title">
+                <i class="el-icon-tickets"></i>content management
+              </div>
+              <div class="requirement">User management</div>
+            </div>
+            <div class="requirements">
+              <div class="requirements-title">
+                <i class="el-icon-tickets"></i>Data report
+              </div>
+              <div class="requirement">Content report</div>
+              <div class="requirement">Review & labeling report</div>
+              <div class="requirement">Performance report</div>
+            </div>
+          </div>
+          <div class="heading3">Overall user flow</div>
+          <img
+            width="100%"
+            src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/user-flow.png"
+          />
+          <div class="heading2">Ideation & Build information architecture</div>
+          <div class="heading3">Update design system</div>
+          <div class="text2 layout2">
+            <a
+              href="https://ant.design/docs/spec/introduce"
+              target="_blank"
+              style="width: 70%"
+            >
+              <img
+                style="width: 100%"
+                src="https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*zx7LTI_ECSAAAAAAAAAAAABkARQnAQ"
+              />
+            </a>
+            <div style="flex: 1">
+              Ant design is a famous and mature enterprise-level design system
+              in China, which has ample elements that are based on Alibaba's
+              financial products. We evaluated that this design system can
+              handle complex business scenarios.<br />
+              <a href="https://ant.design/docs/spec/introduce" target="_blank"
+                >Click to view</a
+              >
+            </div>
+          </div>
+
+          <div class="heading3">Brainstorm</div>
+          <div class="text2">
+            <div>
+              <i class="el-icon-magic-stick"></i>HMW update user’s interface to
+              improve user’s efficiency
+            </div>
+            <div class="text2">
+              <el-collapse v-model="activeName" accordion>
+                <el-collapse-item title="Enhance a sense of purpose" name="1">
+                  <div>
+                    <li>
+                      Divide the whole review process to multiple tasks, set
+                      target for each task
+                    </li>
+                    <li>
+                      Provide completed progress to notify users the left
+                      progress
+                    </li>
+                    <li>
+                      Provide trend of work efficiency to help users adjust the
+                      work status
+                    </li>
+                  </div>
+                </el-collapse-item>
+                <el-collapse-item title="Lead balanced work" name="2">
+                  <div>
+                    <li>provide overwork notification during work process</li>
+                    <li>
+                      Update illustration of the home page to help users refresh
+                    </li>
+                  </div>
+                </el-collapse-item>
+                <el-collapse-item title="Provide assisted information" name="3">
+                  <div>
+                    <li>Leverage AI’s ability</li>
+                    <li>
+                      Remove page jumps and put all the content information to
+                      the current page
+                    </li>
+                    <li>
+                      Provide content creator’s information, content profile and
+                      other useful information to help operators make judgment
+                      faster
+                    </li>
+                  </div>
+                </el-collapse-item>
+              </el-collapse>
+            </div>
+          </div>
+          <div class="text2">
+            <div>
+              <i class="el-icon-magic-stick"></i>HMW let AI be involved in the
+              review and label process
+            </div>
+            <div class="text2">
+              <el-collapse v-model="activeName" accordion>
+                <div class="brainstorm-point">
+                  Let AI preprocess content created by users, if content has
+                  risks then it should be pending until being reviewed
+                </div>
+                <div class="brainstorm-point">
+                  AI gives recommendation for the processing results, then
+                  reducing the thinking time of operators
+                </div>
+                <div class="brainstorm-point">
+                  Adjust AI models to raise correct rate, when correct rate can
+                  be over 99.999% in a specific content scope, then this scope
+                  can be removed from the manual tasks
+                </div>
+              </el-collapse>
+            </div>
+          </div>
+          <div class="text2">
+            <div>
+              <i class="el-icon-magic-stick"></i>HMW provide the most useful
+              data indexes to manager
+            </div>
+            <div class="text2">
+              <el-collapse v-model="activeName" accordion>
+                <el-collapse-item
+                  title="Think back to the whole process of review and label, provide indexes such as amount, completed rate for each step, then the health condition of this process may be very clear. Then we can conclude the following indexes"
+                  name="1"
+                >
+                  <div>
+                    <li>
+                      review: supposed review amount, actual review amount,
+                      review rate, passing rate, misjudgment rate
+                    </li>
+                    <li>
+                      label: supposed labelling amount, actual labelling amount,
+                      labelling rate, mislabelling rate
+                    </li>
+                  </div>
+                </el-collapse-item>
+                <div class="brainstorm-point">
+                  Providing work amount of every staff can be the most effective
+                  and fair way for manager to judge their performance
+                </div>
+              </el-collapse>
+            </div>
+          </div>
+          <div class="heading3">Experience of being attacked by spam squad</div>
+          <div class="text2">
+            During the design process, our community faced severe spam attack
+            from thousands of different IP addresses.
+          </div>
+          <div class="text2">
+            <el-collapse v-model="activeName" accordion>
+              <el-collapse-item title="Event profile" name="1">
+                <div>
+                  <li>
+                    Spam content: 90% advertisements that have similar keywords,
+                    10% meaningless and repeated words
+                  </li>
+                  <li>Spam amount: tens of millions</li>
+                  <li>Spam creator: 100% new registered users</li>
+                  <li>Spam time window: lasting for 1 week</li>
+                  <li>
+                    Source IPs: no obvious patterns, from different locations
+                  </li>
+                </div>
+              </el-collapse-item>
+              <el-collapse-item title="Processing methods" name="2">
+                <div>
+                  <li>
+                    Control content features: block spam content that has
+                    similar keywords
+                  </li>
+                  <li>
+                    Content creation frequency: ban accounts that have high
+                    frequency of publishing content
+                  </li>
+                  <li>
+                    Control IPs: contact specialized anti-spam companies to gain
+                    IP list that have high risks, prevent registration and
+                    delete accounts from these IPs
+                  </li>
+                </div>
+              </el-collapse-item>
+              <el-collapse-item title="Reflection" name="3">
+                <div>
+                  <li>
+                    Keep giving high attention to the build of community
+                    management system, broaden our eyesight and think from
+                    different dimensions
+                  </li>
+                  <li>Accelerate the iteration speed</li>
+                </div>
+              </el-collapse-item>
+            </el-collapse>
+          </div>
+
+          <div class="heading3">
+            Information architecture(exclude mobile side)
+          </div>
+          <div style="background-color: #2e2a33">
+            <img
+              style="width: 100%"
+              src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/architecture.png"
+            />
+          </div>
+          <div class="heading2">Prototype</div>
+          <div class="heading3">Web platform</div>
+          <div class="text2">
+            <img
+              @click="openImage(1)"
+              style="width: 100%; cursor: pointer"
+              src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/prototype-web-compressed.png"
+            />
+          </div>
+          <div class="heading3">Mobile platform</div>
+          <div class="text2">
+            <img
+              @click="openImage(2)"
+              style="width: 100%; cursor: pointer"
+              src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/prototype-mobile-compressed.png"
+            />
+          </div>
+          <div class="heading2">Design critique and user testing</div>
+          <div class="heading3">Critique</div>
+          <div class="user">
             <div class="user-profile">
               <div class="user-profile-name">
                 <img
                   style="width: 75px; border-radius: 37.5px"
-                  src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/wameng-photo.jpeg"
+                  src="https://i9.taou.com/maimai/p/21051/7709_118_37qv8hlzLXcVY3-a160"
                 />
                 <div>
-                  <div>Wa Meng</div>
+                  <div>Qinsi Li</div>
                   <div class="user-linkedin">
                     <a
-                      href="https://www.linkedin.com/in/wameng/"
+                      href="https://www.linkedin.com/in/%E5%8B%A4%E6%80%9D-%E6%9D%8E-006910118/"
                       target="_blank"
                     >
                       <img
@@ -432,11 +952,11 @@
               </div>
               <div class="user-profile-horizontal">
                 <div class="user-profile-key">Age</div>
-                <div class="user-profile-value">30</div>
+                <div class="user-profile-value">26</div>
               </div>
               <div class="user-profile-horizontal">
                 <div class="user-profile-key">Occupation</div>
-                <div class="user-profile-value">Keep's content reviewer</div>
+                <div class="user-profile-value">Keep's community PM</div>
               </div>
               <div class="user-profile-horizontal">
                 <div class="user-profile-key">Working time</div>
@@ -445,8 +965,8 @@
               <div class="user-profile-vertical">
                 <div class="user-profile-key">Duty</div>
                 <div class="user-profile-value">
-                  Review every data created by users, the more I review, the
-                  greater opportunity I can get high performance for reward
+                  Manage requirements, features, strategies of all products
+                  related to Keep's community
                 </div>
               </div>
               <!-- <div class="user-profile-horizontal">
@@ -459,751 +979,251 @@
                 <div class="user-likes-title">Likes</div>
                 <div class="text2">
                   <li>
-                    Keep has put more resources to rebuild content management,
-                    which means I have more opportunity to get high performance,
-                    and it is also a important period to exercise my ability
+                    The new design of Keep Guard can fundamentally fulfill the
+                    development pace of Keep's community, which expands the
+                    review scope, adds labeling function, adds community
+                    management methods and leverages user-centered operating
+                    interface to improve user's efficiency
                   </li>
                 </div>
               </div>
               <div class="user-pain">
-                <div class="user-likes-title">Pain points</div>
+                <div class="user-likes-title">Advices</div>
                 <div class="text2">
                   <li>
-                    We do not have a clear target in every day work, thus cause
-                    the slack and we can't review enough content to ensure the
-                    content quality
-                  </li>
-                  <li>
-                    Sometimes we need to work for a long time to make up for the
-                    previous lack of work
-                  </li>
-                  <li>
-                    I do not think I can get enough information from the web
-                    interface to make efficient judgement
+                    Now the prototype has the condition to be iteratively
+                    developed and delivered to be tested by real users, we need
+                    more feedback after making the product online
                   </li>
                   <div class="user-comment">
-                    “ Although we have motivation, but the review structure and
-                    system is far away from maturity ”
+                    “ I am expected to see the feedback after delivering it”
                   </div>
                 </div>
               </div>
             </div>
-          </div></el-tab-pane
-        >
-        <el-tab-pane label="Content operation team"
-          ><div class="user">
-            <div class="user-profile">
-              <div class="user-profile-name">
-                <img
-                  style="width: 75px; border-radius: 37.5px"
-                  src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/jizhang-photo.jpeg"
-                />
-                <div>
-                  <div>Ji Zhang</div>
-                  <div class="user-linkedin">
-                    <a
-                      href="https://maimai.cn/contact/share/card?u=2lqd3iv6s9vpl&_share_channel=copy_link"
-                      target="_blank"
-                    >
-                      <img
-                        width="20px"
-                        src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/linkedin.png"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="user-profile-horizontal">
-                <div class="user-profile-key">Age</div>
-                <div class="user-profile-value">29</div>
-              </div>
-              <div class="user-profile-horizontal">
-                <div class="user-profile-key">Occupation</div>
-                <div class="user-profile-value">Keep's content operation</div>
-              </div>
-              <div class="user-profile-horizontal">
-                <div class="user-profile-key">Working time</div>
-                <div class="user-profile-value">1 year</div>
-              </div>
-              <div class="user-profile-vertical">
-                <div class="user-profile-key">Duty</div>
-                <div class="user-profile-value">
-                  Manage content quality and lead hot topics
-                </div>
-              </div>
-              <!-- <div class="user-profile-horizontal">
-            <div class="user-profile-key">App user name</div>
-            <div class="user-profile-value">寳寳磨了魔牙</div>
-          </div> -->
-            </div>
-            <div class="user-perspective">
-              <div class="user-likes">
-                <div class="user-likes-title">Likes</div>
-                <div class="text2">
-                  <li>
-                    Content operation is building a structure for the new
-                    criteria of the content quality, I feel a sense of mission
-                    to participate in this challenging work
-                  </li>
-                </div>
-              </div>
-              <div class="user-pain">
-                <div class="user-likes-title">Pain points</div>
-                <div class="text2">
-                  <li>
-                    Sometimes I find some harmful content and want to hide it, I
-                    need to contact engineering team to deal with it, so I want
-                    a more efficient way for me to manage content
-                  </li>
-                  <div class="user-comment">
-                    “ Everything needs to be considered from the beginning ”
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div></el-tab-pane
-        >
-        <el-tab-pane label="Manager"
-          ><div class="user">
-            <div class="user-profile">
-              <div class="user-profile-name">
-                <img
-                  style="width: 75px; border-radius: 37.5px"
-                  src="https://res.cloudinary.com/crunchbase-production/image/upload/c_thumb,h_170,w_170,f_auto,g_faces,z_0.7,b_white,q_auto:eco,dpr_1/mycjxyaaux7dhdpwoi3c"
-                />
-                <div>
-                  <div>Wei Peng</div>
-                  <div class="user-linkedin">
-                    <a
-                      href="https://www.linkedin.com/in/pacinoson/"
-                      target="_blank"
-                    >
-                      <img
-                        width="20px"
-                        src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/linkedin.png"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="user-profile-horizontal">
-                <div class="user-profile-key">Age</div>
-                <div class="user-profile-value">35</div>
-              </div>
-              <div class="user-profile-horizontal">
-                <div class="user-profile-key">Occupation</div>
-                <div class="user-profile-value">
-                  Keep's cofounder and manager
-                </div>
-              </div>
-              <div class="user-profile-horizontal">
-                <div class="user-profile-key">Working time</div>
-                <div class="user-profile-value">8 years</div>
-              </div>
-              <div class="user-profile-vertical">
-                <div class="user-profile-key">Duty</div>
-                <div class="user-profile-value">
-                  Manage all the business operation including community
-                  management
-                </div>
-              </div>
-              <!-- <div class="user-profile-horizontal">
-            <div class="user-profile-key">App user name</div>
-            <div class="user-profile-value">寳寳磨了魔牙</div>
-          </div> -->
-            </div>
-            <div class="user-perspective">
-              <div class="user-likes">
-                <div class="user-likes-title">Likes</div>
-                <div class="text2">
-                  <li>
-                    There is nothing I really likes about the current situation
-                  </li>
-                </div>
-              </div>
-              <div class="user-pain">
-                <div class="user-likes-title">Pain points</div>
-                <div class="text2">
-                  <li>
-                    I want to monitor the efficiency of reviewing, labeling in
-                    order to know whether the human resource is enough and
-                    adjust the performance of every staff
-                  </li>
-                  <li>
-                    I also want to know whether community service’s content is
-                    healthy overall
-                  </li>
-                  <div class="user-comment">
-                    “ I want to build a liable and reputable community for
-                    people who love fitness ”
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div></el-tab-pane
-        >
-      </el-tabs>
-
-      <!-- <div class="text2">
-        <img
-          style="width: 100%"
-          src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/user-wanghuahua.png"
-        />
-      </div> -->
-
-      <div class="heading2">Requirement confirmation</div>
-      <div class="text2">
-        According to goal definition and stakeholder research, we could draw the
-        following requirements
-      </div>
-      <div class="heading3">Mobile side - Keep APP</div>
-      <div class="text2">
-        <div class="requirement">Complaint report</div>
-        <div class="requirement">User feedback portal</div>
-      </div>
-      <div class="heading3">Web side - Keep Guard web system</div>
-      <div class="text2 layout2">
-        <div class="requirements">
-          <div class="requirements-title">
-            <i class="el-icon-tickets"></i>Review
           </div>
-          <div class="requirement">Migrate from the old system</div>
-          <div class="requirement">Add AI to improve efficiency</div>
-          <div class="requirement">
-            Rebuild the review interface to improve efficiency, inluding sense
-            of purpose, balanced work and assisted information
+          <div class="heading3">User testing</div>
+          <div class="text2">
+            We cooperated with review team to review our prototype and see if
+            they can complete the basic operation
           </div>
-          <div class="requirement">
-            Expand the reviewing scope to all types of content
-          </div>
-        </div>
-        <div class="requirements">
-          <div class="requirements-title">
-            <i class="el-icon-tickets"></i>Label function
-          </div>
-          <div class="requirement">Label editing function</div>
-          <div class="requirement">Labeling operation workspace</div>
-          <div class="requirement">
-            Connect labeled content to recommendation system
-          </div>
-        </div>
-        <div class="requirements">
-          <div class="requirements-title">
-            <i class="el-icon-tickets"></i>Community management
-          </div>
-          <div class="requirement">Complaint management</div>
-        </div>
-        <div class="requirements">
-          <div class="requirements-title">
-            <i class="el-icon-tickets"></i>content management
-          </div>
-          <div class="requirement">User management</div>
-        </div>
-        <div class="requirements">
-          <div class="requirements-title">
-            <i class="el-icon-tickets"></i>Data report
-          </div>
-          <div class="requirement">Content report</div>
-          <div class="requirement">Review & labeling report</div>
-          <div class="requirement">Performance report</div>
-        </div>
-      </div>
-      <div class="heading3">Overall user flow</div>
-      <img
-        width="100%"
-        src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/user-flow.png"
-      />
-      <div class="heading2">Ideation & Build information architecture</div>
-      <div class="heading3">Update design system</div>
-      <div class="text2 layout2">
-        <a
-          href="https://ant.design/docs/spec/introduce"
-          target="_blank"
-          style="width: 70%"
-        >
-          <img
-            style="width: 100%"
-            src="https://gw.alipayobjects.com/mdn/rms_08e378/afts/img/A*zx7LTI_ECSAAAAAAAAAAAABkARQnAQ"
-          />
-        </a>
-        <div style="flex: 1">
-          Ant design is a famous and mature enterprise-level design system in
-          China, which has ample elements that are based on Alibaba's financial
-          products. We evaluated that this design system can handle complex
-          business scenarios.<br />
-          <a href="https://ant.design/docs/spec/introduce" target="_blank"
-            >Click to view</a
-          >
-        </div>
-      </div>
-
-      <div class="heading3">Brainstorm</div>
-      <div class="text2">
-        <div>
-          <i class="el-icon-magic-stick"></i>HMW update user’s interface to
-          improve user’s efficiency
-        </div>
-        <div class="text2">
-          <el-collapse v-model="activeName" accordion>
-            <el-collapse-item title="Enhance a sense of purpose" name="1">
-              <div>
-                <li>
-                  Divide the whole review process to multiple tasks, set target
-                  for each task
-                </li>
-                <li>
-                  Provide completed progress to notify users the left progress
-                </li>
-                <li>
-                  Provide trend of work efficiency to help users adjust the work
-                  status
-                </li>
-              </div>
-            </el-collapse-item>
-            <el-collapse-item title="Lead balanced work" name="2">
-              <div>
-                <li>provide overwork notification during work process</li>
-                <li>
-                  Update illustration of the home page to help users refresh
-                </li>
-              </div>
-            </el-collapse-item>
-            <el-collapse-item title="Provide assisted information" name="3">
-              <div>
-                <li>Leverage AI’s ability</li>
-                <li>
-                  Remove page jumps and put all the content information to the
-                  current page
-                </li>
-                <li>
-                  Provide content creator’s information, content profile and
-                  other useful information to help operators make judgment
-                  faster
-                </li>
-              </div>
-            </el-collapse-item>
-          </el-collapse>
-        </div>
-      </div>
-      <div class="text2">
-        <div>
-          <i class="el-icon-magic-stick"></i>HMW let AI be involved in the
-          review and label process
-        </div>
-        <div class="text2">
-          <el-collapse v-model="activeName" accordion>
-            <div class="brainstorm-point">
-              Let AI preprocess content created by users, if content has risks
-              then it should be pending until being reviewed
-            </div>
-            <div class="brainstorm-point">
-              AI gives recommendation for the processing results, then reducing
-              the thinking time of operators
-            </div>
-            <div class="brainstorm-point">
-              Adjust AI models to raise correct rate, when correct rate can be
-              over 99.999% in a specific content scope, then this scope can be
-              removed from the manual tasks
-            </div>
-          </el-collapse>
-        </div>
-      </div>
-      <div class="text2">
-        <div>
-          <i class="el-icon-magic-stick"></i>HMW provide the most useful data
-          indexes to manager
-        </div>
-        <div class="text2">
-          <el-collapse v-model="activeName" accordion>
-            <el-collapse-item
-              title="Think back to the whole process of review and label, provide indexes such as amount, completed rate for each step, then the health condition of this process may be very clear. Then we can conclude the following indexes"
-              name="1"
-            >
-              <div>
-                <li>
-                  review: supposed review amount, actual review amount, review
-                  rate, passing rate, misjudgment rate
-                </li>
-                <li>
-                  label: supposed labelling amount, actual labelling amount,
-                  labelling rate, mislabelling rate
-                </li>
-              </div>
-            </el-collapse-item>
-            <div class="brainstorm-point">
-              Providing work amount of every staff can be the most effective and
-              fair way for manager to judge their performance
-            </div>
-          </el-collapse>
-        </div>
-      </div>
-      <div class="heading3">Experience of being attacked by spam squad</div>
-      <div class="text2">
-        During the design process, our community faced severe spam attack from
-        thousands of different IP addresses.
-      </div>
-      <div class="text2">
-        <el-collapse v-model="activeName" accordion>
-          <el-collapse-item title="Event profile" name="1">
-            <div>
-              <li>
-                Spam content: 90% advertisements that have similar keywords, 10%
-                meaningless and repeated words
-              </li>
-              <li>Spam amount: tens of millions</li>
-              <li>Spam creator: 100% new registered users</li>
-              <li>Spam time window: lasting for 1 week</li>
-              <li>Source IPs: no obvious patterns, from different locations</li>
-            </div>
-          </el-collapse-item>
-          <el-collapse-item title="Processing methods" name="2">
-            <div>
-              <li>
-                Control content features: block spam content that has similar
-                keywords
-              </li>
-              <li>
-                Content creation frequency: ban accounts that have high
-                frequency of publishing content
-              </li>
-              <li>
-                Control IPs: contact specialized anti-spam companies to gain IP
-                list that have high risks, prevent registration and delete
-                accounts from these IPs
-              </li>
-            </div>
-          </el-collapse-item>
-          <el-collapse-item title="Reflection" name="3">
-            <div>
-              <li>
-                Keep giving high attention to the build of community management
-                system, broaden our eyesight and think from different dimensions
-              </li>
-              <li>Accelerate the iteration speed</li>
-            </div>
-          </el-collapse-item>
-        </el-collapse>
-      </div>
-
-      <div class="heading3">Information architecture(exclude mobile side)</div>
-      <div style="background-color: #2e2a33">
-        <img
-          style="width: 100%"
-          src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/architecture.png"
-        />
-      </div>
-      <div class="heading2">Prototype</div>
-      <div class="heading3">Web platform</div>
-      <div class="text2">
-        <img
-          @click="openImage(1)"
-          style="width: 100%; cursor: pointer"
-          src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/prototype-web-compressed.png"
-        />
-      </div>
-      <div class="heading3">Mobile platform</div>
-      <div class="text2">
-        <img
-          @click="openImage(2)"
-          style="width: 100%; cursor: pointer"
-          src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/prototype-mobile-compressed.png"
-        />
-      </div>
-      <div class="heading2">Design critique and user testing</div>
-      <div class="heading3">Critique</div>
-      <div class="user">
-        <div class="user-profile">
-          <div class="user-profile-name">
+          <div class="layout2">
             <img
-              style="width: 75px; border-radius: 37.5px"
-              src="https://i9.taou.com/maimai/p/21051/7709_118_37qv8hlzLXcVY3-a160"
+              style="width: 50%"
+              src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/online-test.png"
             />
-            <div>
-              <div>Qinsi Li</div>
-              <div class="user-linkedin">
-                <a
-                  href="https://www.linkedin.com/in/%E5%8B%A4%E6%80%9D-%E6%9D%8E-006910118/"
-                  target="_blank"
-                >
-                  <img
-                    width="20px"
-                    src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/linkedin.png"
-                  />
-                </a>
+            <div class="completed-rate">
+              <div class="completed-rate-title">
+                Operation completed rate: 100%
               </div>
             </div>
           </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Age</div>
-            <div class="user-profile-value">26</div>
+          <div class="heading2">Deliver</div>
+          <div class="text2">
+            Based on critique and user testing, we evaluated each module of
+            prototype can be iteratively developed and published to the working
+            environment 👏👏👏👏👏.
           </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Occupation</div>
-            <div class="user-profile-value">Keep's community PM</div>
-          </div>
-          <div class="user-profile-horizontal">
-            <div class="user-profile-key">Working time</div>
-            <div class="user-profile-value">2 years</div>
-          </div>
-          <div class="user-profile-vertical">
-            <div class="user-profile-key">Duty</div>
-            <div class="user-profile-value">
-              Manage requirements, features, strategies of all products related
-              to Keep's community
-            </div>
-          </div>
-          <!-- <div class="user-profile-horizontal">
-            <div class="user-profile-key">App user name</div>
-            <div class="user-profile-value">寳寳磨了魔牙</div>
-          </div> -->
         </div>
-        <div class="user-perspective">
-          <div class="user-likes">
-            <div class="user-likes-title">Likes</div>
-            <div class="text2">
-              <li>
-                The new design of Keep Guard can fundamentally fulfill the
-                development pace of Keep's community, which expands the review
-                scope, adds labeling function, adds community management methods
-                and leverages user-centered operating interface to improve
-                user's efficiency
-              </li>
-            </div>
+        <div class="block">
+          <div class="top-bar work-length">
+            <div class="title">Feedback</div>
+            <div class="bar-divide"></div>
           </div>
-          <div class="user-pain">
-            <div class="user-likes-title">Advices</div>
-            <div class="text2">
-              <li>
-                Now the prototype has the condition to be iteratively developed
-                and delivered to be tested by real users, we need more feedback
-                after making the product online
-              </li>
-              <div class="user-comment">
-                “ I am expected to see the feedback after delivering it”
+          <div class="heading2">Data feedback</div>
+          <div class="data-feedback">
+            <div class="feedback-index">
+              <img
+                width="200px"
+                src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/user.png"
+              />
+              <div class="feedback-title">User amount</div>
+            </div>
+            <div class="feedback-datas">
+              <div class="feedback-data">
+                <div class="feedback-data-title">Reviewer</div>
+                <div class="feedback-data-content">60+</div>
+              </div>
+              <div class="feedback-data">
+                <div class="feedback-data-title">Labeling staff</div>
+                <div class="feedback-data-content">20+</div>
+              </div>
+              <div class="feedback-data">
+                <div class="feedback-data-title">Content operation staff</div>
+                <div class="feedback-data-content">20+</div>
+              </div>
+              <div class="feedback-data">
+                <div class="feedback-data-title">Total web system user</div>
+                <div class="feedback-data-content">100+</div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="heading3">User testing</div>
-      <div class="text2">
-        We cooperated with review team to review our prototype and see if they
-        can complete the basic operation
-      </div>
-      <div class="layout2">
-        <img
-          style="width: 50%"
-          src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/online-test.png"
-        />
-        <div class="completed-rate">
-          <div class="completed-rate-title">Operation completed rate: 100%</div>
-        </div>
-      </div>
-      <div class="heading2">Deliver</div>
-      <div class="text2">
-        Based on critique and user testing, we evaluated each module of
-        prototype can be iteratively developed and published to the working
-        environment 👏👏👏👏👏.
-      </div>
-    </div>
-    <div class="block">
-      <div class="top-bar work-length">
-        <div class="title">Feedback</div>
-        <div class="bar-divide"></div>
-      </div>
-      <div class="heading2">Data feedback</div>
-      <div class="data-feedback">
-        <div class="feedback-index">
-          <img
-            width="200px"
-            src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/user.png"
-          />
-          <div class="feedback-title">User amount</div>
-        </div>
-        <div class="feedback-datas">
-          <div class="feedback-data">
-            <div class="feedback-data-title">Reviewer</div>
-            <div class="feedback-data-content">60+</div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-title">Labeling staff</div>
-            <div class="feedback-data-content">20+</div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-title">Content operation staff</div>
-            <div class="feedback-data-content">20+</div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-title">Total web system user</div>
-            <div class="feedback-data-content">100+</div>
-          </div>
-        </div>
-      </div>
-      <div class="data-feedback">
-        <div class="feedback-index">
-          <img
-            width="200px"
-            src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/capacity.png"
-          />
-          <div class="feedback-title">Production capacity (per day)</div>
-        </div>
-        <div class="feedback-datas">
-          <div class="feedback-data">
-            <div class="feedback-data-title">Reviewed content</div>
-            <div class="feedback-data-content">500+ thousands</div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-title">Labeled content</div>
-            <div class="feedback-data-content">80+ thousands</div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-title">Processed complaints</div>
-            <div class="feedback-data-content">500+</div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-title">Review rate</div>
-            <div class="feedback-data-content">98%+</div>
-          </div>
-        </div>
-      </div>
-      <div class="data-feedback">
-        <div class="feedback-index">
-          <img
-            width="200px"
-            src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/compare.svg"
-          />
-          <div class="feedback-title">Comparison data</div>
-        </div>
-        <div class="feedback-datas">
-          <div class="feedback-data" style="width: 88%">
-            <div class="feedback-data-title">
-              Average reviewed amount per operator per day
+          <div class="data-feedback">
+            <div class="feedback-index">
+              <img
+                width="200px"
+                src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/capacity.png"
+              />
+              <div class="feedback-title">Production capacity (per day)</div>
             </div>
-            <div class="feedback-data-content">6000+ → 8000+</div>
+            <div class="feedback-datas">
+              <div class="feedback-data">
+                <div class="feedback-data-title">Reviewed content</div>
+                <div class="feedback-data-content">500+ thousands</div>
+              </div>
+              <div class="feedback-data">
+                <div class="feedback-data-title">Labeled content</div>
+                <div class="feedback-data-content">80+ thousands</div>
+              </div>
+              <div class="feedback-data">
+                <div class="feedback-data-title">Processed complaints</div>
+                <div class="feedback-data-content">500+</div>
+              </div>
+              <div class="feedback-data">
+                <div class="feedback-data-title">Review rate</div>
+                <div class="feedback-data-content">98%+</div>
+              </div>
+            </div>
           </div>
-          <div class="feedback-data">
-            <div class="feedback-data-title">Manpower savings</div>
-            <div class="feedback-data-content">6</div>
+          <div class="data-feedback">
+            <div class="feedback-index">
+              <img
+                width="200px"
+                src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/article/compare.svg"
+              />
+              <div class="feedback-title">Comparison data</div>
+            </div>
+            <div class="feedback-datas">
+              <div class="feedback-data" style="width: 88%">
+                <div class="feedback-data-title">
+                  Average reviewed amount per operator per day
+                </div>
+                <div class="feedback-data-content">6000+ → 8000+</div>
+              </div>
+              <div class="feedback-data">
+                <div class="feedback-data-title">Manpower savings</div>
+                <div class="feedback-data-content">6</div>
+              </div>
+              <div class="feedback-data">
+                <div class="feedback-data-title">Review rate</div>
+                <div class="feedback-data-content">90%+ → 98%+</div>
+              </div>
+              <div class="feedback-data">
+                <div class="feedback-data-title">Phone complaints per day</div>
+                <div class="feedback-data-content">100+ → 70+</div>
+              </div>
+            </div>
           </div>
-          <div class="feedback-data">
-            <div class="feedback-data-title">Review rate</div>
-            <div class="feedback-data-content">90%+ → 98%+</div>
-          </div>
-          <div class="feedback-data">
-            <div class="feedback-data-title">Phone complaints per day</div>
-            <div class="feedback-data-content">100+ → 70+</div>
-          </div>
-        </div>
-      </div>
 
-      <div class="heading2">Team's feedback</div>
-      <div class="heading3">Review & Labeling team</div>
-      <div class="feedback text2">
-        <div class="feedback-left">
-          Likes
-          <li>Efficiency was increased by at least 20%</li>
-          <li>New interface design was comfortable to use</li>
-        </div>
-        <div class="feedback-right">
-          Advices
-          <li>
-            The correct rate of AI identification can be improved, when AI’s
-            ability is strong enough, some content may not be reviewed by human
-            any more
-          </li>
-          <li>
-            There may still be spaces of operating interface, we can cooperate
-            with product team to find small details that can be improved
-          </li>
-        </div>
-      </div>
-      <div class="heading3">Content operation team</div>
-      <div class="feedback">
-        <div class="feedback-left">
-          Likes
-          <li>
-            Functions can fundamentally satisfy our needs of content filter
-          </li>
-          <li>we can deal with urgent spam event in the first time</li>
-        </div>
-        <div class="feedback-right">
-          Advices
-          <li>
-            The correct rate of AI automatic content classification can be still
-            improved, then contents that pass the review process can be directly
-            classified and recommended by AI
-          </li>
-          <li>
-            Current anti-spam functions are not enough to deal with large-scale
-            spam attack
-          </li>
-        </div>
-      </div>
-      <div class="heading3">Manager</div>
-      <div class="feedback">
-        <div class="feedback-left">
-          Likes
-          <li>
-            Current platform can support the community service development
-          </li>
-          <li>I can know about the operation situation of Keep Shield</li>
-        </div>
-        <div class="feedback-right">
-          Advices
-          <li>
-            Afterwards limited resources are devoted to Keep Guard, focus on one
-            or two modules that are most critical to the Keep community
-            development
-          </li>
-        </div>
-      </div>
-    </div>
-    <div class="block">
-      <div class="top-bar work-length">
-        <div class="title">Reflection & Following steps</div>
-        <div class="bar-divide"></div>
-      </div>
-      <div class="text2 layout2">
-        <div class="reflection">
-          <img
-            src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/spam.png"
-          />
-          <div style="flex: 1">
-            Strengthen anti-spam ability, provide advanced feature like IP block
-            to reduce the workload of content operation team
+          <div class="heading2">Team's feedback</div>
+          <div class="heading3">Review & Labeling team</div>
+          <div class="feedback text2">
+            <div class="feedback-left">
+              Likes
+              <li>Efficiency was increased by at least 20%</li>
+              <li>New interface design was comfortable to use</li>
+            </div>
+            <div class="feedback-right">
+              Advices
+              <li>
+                The correct rate of AI identification can be improved, when AI’s
+                ability is strong enough, some content may not be reviewed by
+                human any more
+              </li>
+              <li>
+                There may still be spaces of operating interface, we can
+                cooperate with product team to find small details that can be
+                improved
+              </li>
+            </div>
+          </div>
+          <div class="heading3">Content operation team</div>
+          <div class="feedback">
+            <div class="feedback-left">
+              Likes
+              <li>
+                Functions can fundamentally satisfy our needs of content filter
+              </li>
+              <li>we can deal with urgent spam event in the first time</li>
+            </div>
+            <div class="feedback-right">
+              Advices
+              <li>
+                The correct rate of AI automatic content classification can be
+                still improved, then contents that pass the review process can
+                be directly classified and recommended by AI
+              </li>
+              <li>
+                Current anti-spam functions are not enough to deal with
+                large-scale spam attack
+              </li>
+            </div>
+          </div>
+          <div class="heading3">Manager</div>
+          <div class="feedback">
+            <div class="feedback-left">
+              Likes
+              <li>
+                Current platform can support the community service development
+              </li>
+              <li>I can know about the operation situation of Keep Shield</li>
+            </div>
+            <div class="feedback-right">
+              Advices
+              <li>
+                Afterwards limited resources are devoted to Keep Guard, focus on
+                one or two modules that are most critical to the Keep community
+                development
+              </li>
+            </div>
           </div>
         </div>
-        <div class="reflection">
-          <img
-            src="https://cdn.actico.com/wp-3f76a-content/uploads/2019/02/10125910/actico-platform-machine-learning-illustration-640x569.png"
-          />
-          <div style="flex: 1">
-            Cooperate with AI team to improve the correct rate and recall rate ,
-            then add auto-pending and auto-label process in order to
-            significantly reduce human workload
+        <div class="block">
+          <div class="top-bar work-length">
+            <div class="title">Reflection & Following steps</div>
+            <div class="bar-divide"></div>
           </div>
-        </div>
-        <div class="reflection">
-          <img
-            src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/feedback.png"
-          />
-          <div style="flex: 1">
-            Short-term feedback can not be so precise to reflect the operating
-            experience, we need to collect long-term feedback
+          <div class="text2 layout2">
+            <div class="reflection">
+              <img
+                src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/spam.png"
+              />
+              <div style="flex: 1">
+                Strengthen anti-spam ability, provide advanced feature like IP
+                block to reduce the workload of content operation team
+              </div>
+            </div>
+            <div class="reflection">
+              <img
+                src="https://cdn.actico.com/wp-3f76a-content/uploads/2019/02/10125910/actico-platform-machine-learning-illustration-640x569.png"
+              />
+              <div style="flex: 1">
+                Cooperate with AI team to improve the correct rate and recall
+                rate , then add auto-pending and auto-label process in order to
+                significantly reduce human workload
+              </div>
+            </div>
+            <div class="reflection">
+              <img
+                src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/feedback.png"
+              />
+              <div style="flex: 1">
+                Short-term feedback can not be so precise to reflect the
+                operating experience, we need to collect long-term feedback
+              </div>
+            </div>
+            <div class="reflection">
+              <img
+                src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/design-system.png"
+              />
+              <div style="flex: 1">
+                Build Keep’s own enterprise-level design system - long-term
+                objective
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="reflection">
-          <img
-            src="https://raw.githubusercontent.com/RayVec/images/main/keep-guard/design-system.png"
-          />
-          <div style="flex: 1">
-            Build Keep’s own enterprise-level design system - long-term
-            objective
-          </div>
-        </div>
-      </div>
 
-      <!-- <div class="text2">
+          <!-- <div class="text2">
         <li>
           Strengthen anti-spam ability, provide advanced feature like IP block
           to reduce the workload of content operation team
@@ -1247,23 +1267,25 @@
           />
         </div>
       </div> -->
-    </div>
-    <div class="block">
-      <div class="contact">
-        <!-- <div class="top-bar">
+        </div>
+        <div class="block">
+          <div class="contact">
+            <!-- <div class="top-bar">
           <div class="title">Contact me</div>
           <div class="bar-divide"></div>
         </div> -->
-        <div class="contact-content">
-          <span>
-            Thanks for reading
+            <div class="contact-content">
+              <span>
+                Thanks for reading
 
-            <span style="color: #d90404; margin-left: 8px"> !</span>
-          </span>
-        </div>
-        <div class="contact-lead">
-          <div class="contact-lead-left">Prev</div>
-          <div @click="openFreeTrial" class="contact-lead-right">Next</div>
+                <span style="color: #d90404; margin-left: 8px"> !</span>
+              </span>
+            </div>
+            <div class="contact-lead">
+              <div class="contact-lead-left">Prev</div>
+              <div @click="openFreeTrial" class="contact-lead-right">Next</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -1413,6 +1435,15 @@ export default {
 </script>
 
 <style scoped>
+/* body layout */
+.body-content {
+  width: 100%;
+  display: flex;
+}
+.body-right {
+  flex: 1;
+}
+
 .reflection {
   width: 48%;
   display: flex;
@@ -1597,7 +1628,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   border: 1px solid #e5e7e9;
   box-shadow: 0px 0px 8px #f8f9f9;
   border-radius: 32px;
@@ -1606,6 +1637,7 @@ export default {
   height: 100%;
   font-size: 16px;
   overflow: hidden;
+  overflow-y: auto;
   transition: transform 0.5s ease-in-out;
   transform: rotateY(180deg);
 }
@@ -1959,7 +1991,8 @@ li {
 .title-zone {
   background-color: white;
   box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.105);
-  padding: 16px;
+  padding: 24px;
+  border-radius: 16px;
   width: 60%;
   margin-left: 10%;
   margin-top: -36px;
@@ -2220,10 +2253,11 @@ a:active {
   padding: 20px 0;
 }
 .home {
-  width: max(896px, 65%);
+  width: max(896px, 90%);
   margin: 0 auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
+
 .goal {
   display: flex;
   align-items: center;
