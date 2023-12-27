@@ -36,12 +36,37 @@
                 src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/linkedin-black.png"
               />
             </a>
-            <a href="mailto:rayvec@utexas.edu" target="_blank">
+            <a
+              href="mailto:rayvec@utexas.edu"
+              style="display: flex"
+              target="_blank"
+            >
               <img
                 style="height: 29px"
                 src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/mail-black.png"
               />
             </a>
+            <el-popover placement="top-start" trigger="hover">
+              <div class="language-popover">
+                <div class="language-title">多语言/Multi-Language</div>
+                <div>
+                  Sorry this website doesn’t support integrated multi-language,
+                  you can use the translation function of Chrome as a
+                  substitute.
+                </div>
+                <div>
+                  抱歉当前网站不支持内置多语言切换，你可以使用Chrome浏览器的翻译功能作为替代。
+                </div>
+                <img
+                  src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/chrome-translation.png"
+                />
+              </div>
+              <img
+                slot="reference"
+                style="height: 25px"
+                src="https://raw.githubusercontent.com/RayVec/images/main/portfolio/language.svg"
+              />
+            </el-popover>
           </div>
         </div>
         <div @click="clickMenu" class="mobile-menu">
@@ -151,12 +176,31 @@ export default {
 </script>
 
 <style scoped>
+/* language */
+.language-popover {
+  font-family: "Poppins", sans-serif;
+  color: black;
+  width: 30vw;
+  box-sizing: border-box;
+  padding: 1vw;
+}
+.language-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+.language-popover >>> img {
+  width: 100%;
+}
+.language-popover >>> div {
+  margin-bottom: 16px;
+}
+
 .media >>> img {
   cursor: pointer;
 }
 .media {
   display: flex;
-  width: 80px;
+  width: 120px;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5px;
